@@ -1,0 +1,86 @@
+.footer {
+  min-height: 389px;
+  width: 100%;
+  padding: 43px 130px 0;
+  display: flex;
+  flex-wrap: wrap;
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(43, 41, 45, 0.6);
+    width: 360px;
+    line-height: 26px;
+    margin: 26px 0 25px;
+  }
+  &__button {
+    width: 135px;
+    height: 40px;
+    background: url(../images/app-store.svg);
+    border: none;
+    cursor: pointer;
+    &:nth-child(2) {
+      width: 116px;
+      background: url(../images/google-play.svg);
+      margin-left: 3px;
+    }
+  }
+  &__link-label {
+    min-width: 265px;
+    &:nth-child(2) {
+      margin: 0 29px 0 126px;
+    }
+    & > h6 {
+      font-size: 22px;
+      font-weight: 700;
+      color: rgba(43, 41, 45, 1);
+      margin-bottom: 18px;
+    }
+  }
+  &__extraLink-label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.productAndCompany-links {
+  list-style: none;
+  &__item > a {
+    text-decoration: none;
+    color: rgba(43, 41, 45, 0.6);
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.extraLinks {
+  min-width: 180px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  &__textItem > a {
+    text-decoration: none;
+    color: rgba(43, 41, 45, 0.6);
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.extraIcons {
+  min-width: 97px;
+  &__item > a {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background: url(../images/linkedIn.svg);
+  }
+  &__item:nth-child(1) > a {
+    width: 21px;
+    height: 16px;
+    background: url(../images/icon-twitter.svg);
+  }
+  &__item:nth-child(2) > a {
+    background: url(../images/icon-fb.svg);
+  }
+}

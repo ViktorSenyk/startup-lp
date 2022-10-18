@@ -1,0 +1,83 @@
+.header {
+  width: 1140px;
+  height: 62px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  &__button {
+    width: 160px;
+    height: 48px;
+    background-color: rgba(48, 64, 196, 1);
+    font-weight: 700;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 2px;
+    margin-left: 75px;
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  margin-left: auto;
+}
+
+.logo {
+  display: flex;
+  &__img {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(43, 41, 45, 0.6);
+  }
+}
+
+.nav-list {
+  width: 273px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  &__item {
+    & > a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 18px;
+      color: rgba(0, 0, 0, 1);
+    }
+    &:nth-child(3) {
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 5px;
+        position: absolute;
+        top: 10px;
+        right: -19px;
+        background: url(../images/arrow.svg);
+      }
+    }
+    &_select > a {
+      font-weight: 700;
+      color: rgba(43, 41, 45, 1);
+    }
+  }
+}
+.pinkBacground-lable {
+  min-height: 710px;
+  padding: 39px 0 77px;
+  background-color: rgba(243, 198, 189, 1);
+}

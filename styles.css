@@ -6,19 +6,6 @@
   padding: 0;
 }
 
-.page {
-  width: 1400px;
-  margin: auto;
-  position: relative;
-}
-.page__line-for-footer {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: rgba(43, 41, 45, 0.1);
-  bottom: 50px;
-}
-
 .header {
   width: 1140px;
   height: 62px;
@@ -91,12 +78,13 @@
   right: -19px;
   background: url(../images/arrow.svg);
 }
-.nav-list__item_select {
+.nav-list__item_select > a {
   font-weight: 700;
   color: rgb(43, 41, 45);
 }
 
 .pinkBacground-lable {
+  min-height: 710px;
   padding: 39px 0 77px;
   background-color: rgb(243, 198, 189);
 }
@@ -126,7 +114,7 @@
 .footer__button:nth-child(2) {
   width: 116px;
   background: url(../images/google-play.svg);
-  margin-left: 10px;
+  margin-left: 3px;
 }
 .footer__link-label {
   min-width: 265px;
@@ -186,6 +174,66 @@
 }
 .extraIcons__item:nth-child(2) > a {
   background: url(../images/icon-fb.svg);
+}
+
+.headline {
+  position: relative;
+  padding-left: 130px;
+}
+.headline__title {
+  width: 754px;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 78px;
+  color: rgb(43, 41, 45);
+  letter-spacing: -0.5px;
+  position: relative;
+  z-index: 2;
+}
+.headline__text {
+  width: 456px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: rgb(43, 41, 45);
+  margin: 34px 0 58px;
+}
+.headline__banner {
+  position: absolute;
+  bottom: -60.5px;
+  right: 25px;
+}
+.headline__action-button:nth-child(2) {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
+  color: rgb(48, 64, 196);
+  margin-left: 5px;
+}
+
+.action-button {
+  width: 160px;
+  height: 48px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040c4;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  background-blend-mode: overlay, normal;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+.page {
+  width: 1400px;
+  margin: auto;
+  position: relative;
+}
+.page__line-for-footer {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(43, 41, 45, 0.1);
+  bottom: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

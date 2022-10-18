@@ -38,7 +38,7 @@
   height: 60px;
   margin-right: 15px;
 }
-.logo__text {
+.logo__text-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,7 +114,7 @@
 .footer__button:nth-child(2) {
   width: 116px;
   background: url(../images/google-play.svg);
-  margin-left: 3px;
+  margin-left: 5px;
 }
 .footer__link-label {
   min-width: 265px;
@@ -221,6 +221,28 @@
   color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
+}
+
+.whatIsIt {
+  width: 1400px;
+  min-height: 255px;
+  background-color: rgb(244, 245, 247);
+  display: flex;
+  justify-content: space-between;
+  padding: 77px 130px 76px;
+}
+.whatIsIt__text-label {
+  width: 555px;
+  min-height: 102px;
+}
+.whatIsIt__text-label > h6, .whatIsIt__text-label p {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgb(43, 41, 45);
+}
+.whatIsIt__text-label > p {
+  font-weight: 400;
 }
 
 .page {

@@ -1,0 +1,21 @@
+.whatIsIt {
+    width: 1400px;
+    min-height: 255px;
+    background-color: rgba(244, 245, 247, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 77px 130px 76px;
+    &__text-label {
+        width: 555px;
+        min-height: 102px;
+        & > h6, p {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 32px;
+            color: rgba(43, 41, 45, 1);
+        }
+        & > p {
+            font-weight: 400;
+        }
+    }
+}

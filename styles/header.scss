@@ -15,19 +15,21 @@
     border-radius: 2px;
     margin-left: 75px;
     cursor: pointer;
+    margin-bottom: 14px;
   }
 }
 
 .navigation {
   margin-left: auto;
+  margin-bottom: 21px;
 }
 
 .logo {
   display: flex;
   &__img {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
+    width: 66px;
+    height: 68px;
+    margin: 1px 9px 0 0;
   }
   &__text-label {
     display: flex;
@@ -37,6 +39,7 @@
   &__name {
     font-size: 20px;
     font-weight: 700;
+    margin-bottom: 4px;
   }
   &__description {
     font-size: 18px;
@@ -65,7 +68,7 @@
         width: 8px;
         height: 5px;
         position: absolute;
-        top: 10px;
+        top: 9px;
         right: -19px;
         background: url(../images/arrow.svg);
       }

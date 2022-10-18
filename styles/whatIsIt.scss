@@ -4,7 +4,7 @@
     background-color: rgba(244, 245, 247, 1);
     display: flex;
     justify-content: space-between;
-    padding: 77px 130px 76px;
+    padding: 77px 131px 76px;
     &__text-label {
         width: 555px;
         min-height: 102px;
@@ -13,9 +13,11 @@
             font-weight: 700;
             line-height: 32px;
             color: rgba(43, 41, 45, 1);
+            margin-top: 1px;
         }
         & > p {
             font-weight: 400;
+            margin-top: 8px;
         }
     }
 }

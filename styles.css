@@ -228,28 +228,44 @@
   cursor: pointer;
 }
 
-.whatIsIt {
+.about {
   width: 1400px;
   min-height: 255px;
   background-color: rgb(244, 245, 247);
   display: flex;
   justify-content: space-between;
-  padding: 77px 131px 76px;
+  padding: 77px 131px 73px 130px;
 }
-.whatIsIt__text-label {
+.about__text-label {
   width: 555px;
   min-height: 102px;
 }
-.whatIsIt__text-label > h6, .whatIsIt__text-label p {
+.about__text-label > h6, .about__text-label p {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
   color: rgb(43, 41, 45);
   margin-top: 1px;
 }
-.whatIsIt__text-label > p {
+.about__text-label > p {
   font-weight: 400;
   margin-top: 8px;
+}
+
+.customers {
+  max-width: 1140px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto 106px;
+}
+.customers__icon {
+  display: flex;
+}
+.customers__icon > img {
+  filter: brightness(0);
+  max-width: 100%;
+  margin: auto;
 }
 
 .page {

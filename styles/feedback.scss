@@ -1,0 +1,59 @@
+.feedback {
+  width: 1400px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 66px 0;
+  position: relative;
+  &__wrap {
+    text-align: center;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgba(49, 66, 198, 1);
+  }
+  &__comment {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    max-width: 750px;
+    margin: 28px 0 34px 20px;
+  }
+  &__user-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  &__user-position {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+  &__buttons-wrap {
+    margin-top: 38px;
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(43, 41, 45, 0.2);
+    border: none;
+    cursor: pointer;
+    &_select {
+      background-color: rgba(49, 66, 197, 1);
+    }
+  }
+  &__banner {
+    position: absolute;
+    right: 26px;
+    bottom: -1px;
+  }
+}

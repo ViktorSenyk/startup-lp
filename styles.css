@@ -262,6 +262,7 @@
 }
 .customers_second-section {
   padding-left: 2px;
+  margin-bottom: 75px;
 }
 
 .features {
@@ -614,6 +615,142 @@
   font-weight: 700;
   line-height: 26px;
   color: rgb(48, 64, 196);
+}
+
+.feedback {
+  width: 1400px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 66px 0;
+  position: relative;
+}
+.feedback__wrap {
+  text-align: center;
+}
+.feedback__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: rgb(49, 66, 198);
+}
+.feedback__comment {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  max-width: 750px;
+  margin: 28px 0 34px 20px;
+}
+.feedback__user-name {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.feedback__user-position {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(43, 41, 45, 0.6);
+}
+.feedback__buttons-wrap {
+  margin-top: 38px;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.feedback__button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(43, 41, 45, 0.2);
+  border: none;
+  cursor: pointer;
+}
+.feedback__button_select {
+  background-color: rgb(49, 66, 197);
+}
+.feedback__banner {
+  position: absolute;
+  right: 26px;
+  bottom: -1px;
+}
+
+.hiring {
+  max-width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 106px 0 110px;
+}
+.hiring__title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+}
+.hiring__text {
+  max-width: 555px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 26px auto 32px;
+}
+.hiring__button {
+  width: 247px;
+  margin-bottom: 110px;
+}
+.hiring__cards-wrap {
+  max-width: 750px;
+  min-height: 284px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.hiring__card {
+  display: block;
+  height: 81px;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  padding: 0 114px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+}
+.hiring__card:nth-child(1) {
+  padding-right: 104px;
+}
+.hiring__card::after {
+  content: "";
+  width: 8px;
+  height: 12px;
+  background: url(../images/hiring-arrow.svg);
+  position: absolute;
+  filter: brightness(60%);
+  right: 23.5px;
+  top: 34.5px;
+}
+.hiring__card > h6 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.hiring__card > span {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(43, 41, 45, 0.6);
+}
+.hiring__card:hover {
+  background-color: rgb(49, 65, 197);
+}
+.hiring__card:hover::after {
+  filter: brightness(100%);
+}
+.hiring__card:hover > h6,
+.hiring__card:hover span {
+  color: rgb(255, 255, 255);
 }
 
 .page {

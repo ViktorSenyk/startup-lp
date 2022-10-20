@@ -1,12 +1,12 @@
 .support-mobile {
-    display: none;
+  display: none;
 }
 
-@media (max-width: 401px) {
-    .support-mobile {
+@media (max-width: 1400px) {
+  .support-mobile {
     display: block;
     &__second-title {
-        margin-bottom: 18px;
+      margin-bottom: 18px;
     }
-}
+  }
 }

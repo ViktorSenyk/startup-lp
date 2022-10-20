@@ -47,7 +47,7 @@
   }
 }
 
-@media (min-width: 402px) {
+@media (min-width: 1400px) {
   .order {
     padding: 72px 0 72px;
     display: flex;
@@ -63,9 +63,8 @@
       margin: -6px 0 0 124px;
     }
     &__title {
-        margin: 40px 0 19px;
+      margin: 40px 0 19px;
     }
-
 
     &__description {
       margin: 0 0 0 -2px;

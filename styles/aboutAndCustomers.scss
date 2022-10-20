@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 401px) {
+@media (max-width: 1400px) {
   .about {
     width: 100%;
     display: block;
@@ -58,7 +58,7 @@
       }
       & > p {
         letter-spacing: normal;
-        margin:  9px 0 0 0;
+        margin: 9px 0 0 0;
       }
       &:first-child {
         margin-bottom: 31px;

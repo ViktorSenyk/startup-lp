@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 401px) {
+@media (max-width: 1400px) {
   .inbox {
     width: 100%;
     margin: 0;
@@ -132,7 +132,7 @@
       display: flex;
       justify-content: space-between;
       & > img {
-        margin:  3px 11px 0 0;
+        margin: 3px 11px 0 0;
       }
     }
   }

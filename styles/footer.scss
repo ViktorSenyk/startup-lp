@@ -15,12 +15,12 @@
   &__button {
     width: 135px;
     height: 40px;
-    background: url(../images/app-store.svg);
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png);
     border: none;
     cursor: pointer;
     &:nth-child(2) {
       width: 116px;
-      background: url(../images/google-play.svg);
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png);
       margin-left: 5px;
     }
   }

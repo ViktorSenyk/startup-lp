@@ -57,3 +57,32 @@
     bottom: -1px;
   }
 }
+
+@media (max-width: 401px) {
+  .feedback {
+    width: 100%;
+    display: block;
+    padding: 37px 15px 46px;
+    &__wrap {
+      text-align: start;
+    }
+    &__comment {
+      width: 100%;
+      margin: 29px 0 32px;
+    }
+    &__buttons-wrap {
+      margin: 41px auto 0;
+      width: 75px;
+    }
+    &__button {
+      width: 12px;
+      height: 12px;
+    }
+    &__banner {
+      position: static;
+      width: 290px;
+      height: 258px;
+      margin-top: 40px;
+    }
+  }
+}

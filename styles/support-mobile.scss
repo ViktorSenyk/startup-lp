@@ -1,0 +1,12 @@
+.support-mobile {
+    display: none;
+}
+
+@media (max-width: 401px) {
+    .support-mobile {
+    display: block;
+    &__second-title {
+        margin-bottom: 18px;
+    }
+}
+}

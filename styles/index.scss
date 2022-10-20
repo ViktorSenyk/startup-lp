@@ -18,6 +18,9 @@
 @import 'communication';
 @import 'feedback';
 @import 'hiring';
+@import 'order';
+@import 'engage-mobile';
+@import 'support-mobile';
 
 .page {
   width: 1400px;
@@ -36,4 +39,17 @@
   min-height: 710px;
   padding: 39px 0 77px;
   background-color: rgba(243, 198, 189, 1);
+}
+
+@media (max-width: 400px) {
+  .page {
+    width: 320px;
+    &__line-for-footer {
+      bottom: 423px;
+    }
+  }
+  .pinkBacground-wrapper {
+    min-height: unset;
+    padding: 0;
+  }
 }

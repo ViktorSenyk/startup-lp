@@ -38,6 +38,7 @@
             </ul>
           </nav>
           <button class="header__button">Get Started</button>
+          <button class="header__mobile-button"></button>
         </header>
         <section class="headline">
           <h1 class="headline__title">Build stunning websites & apps.</h1>
@@ -84,11 +85,18 @@
       <section class="features">
         <div class="features__content-wrapper">
           <h6 class="features__first-title">Features</h6>
+          <h6 class="features__first-title_mobile">Acquire Customers</h6>
           <h2 class="features__second-title">Easily find leads and customers</h2>
           <p class="features__description-text">
             Send one-off and automated email, push, and in-app messages to people. Create better
             stories.
           </p>
+          <img
+            src="./images/features-mobile-banner.png"
+            alt="features-banner"
+            class="features__mobile-banner"
+          />
+          <p class="features__mobile-caption">A better way to acquire new users</p>
           <div class="features__click-block features__click-block_active">
             <h6>Acquire new customers</h6>
             <p>
@@ -108,6 +116,36 @@
           class="features__small-banner"
         />
         <img src="./images/features-big-banner.png" alt="big banner" class="features__big-banner" />
+      </section>
+      <section class="engage-mobile">
+        <h6 class="engage-mobile__first-title">Engage Users</h6>
+        <h2 class="engage-mobile__second-title">Engage with your audience</h2>
+        <p class="engage-mobile__text">
+          Send one-off and automated email, push, and in-app messages to people. Create better
+          stories.
+        </p>
+        <img
+          src="./images/engage-mobile-banner.png"
+          alt="engage-mobile__banner"
+          class="engage-mobile__banner"
+        />
+        <p class="engage-mobile__caption">Knowledge base and smart self-service</p>
+      </section>
+      <section class="engage-mobile support-mobile">
+        <h6 class="engage-mobile__first-title">Support</h6>
+        <h2 class="engage-mobile__second-title support-mobile__second-title">
+          The best customer experiences
+        </h2>
+        <p class="engage-mobile__text">
+          A beautifully simple system for tracking, prioritizing, and solving customer support
+          tickets.
+        </p>
+        <img
+          src="./images/support-mobile-banner.png"
+          alt="support-mobile__banner"
+          class="engage-mobile__banner"
+        />
+        <p class="engage-mobile__caption">Live chat and messaging</p>
       </section>
       <section class="inbox">
         <div class="inbox__banner">
@@ -226,11 +264,13 @@
           <button class="feedback__button"></button>
           <button class="feedback__button"></button>
         </div>
-        <img src="./images/feedback-banner.png" alt="banner" class="feedback__banner">
+        <img src="./images/feedback-banner.png" alt="banner" class="feedback__banner" />
       </section>
       <section class="hiring">
         <h2 class="hiring__title">We’re hiring</h2>
-        <p class="hiring__text">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+        <p class="hiring__text">
+          We’re a team of lifelong learners. We’re equal parts left and right brained.
+        </p>
         <button class="action-button hiring__button">More about Company</button>
         <div class="hiring__cards-wrap">
           <a href="#" class="hiring__card">
@@ -247,9 +287,26 @@
           </a>
         </div>
       </section>
+      <section class="order">
+        <div class="order__banner"></div>
+        <div class="order__wrap">
+          <h2 class="order__title">Start your free trial.</h2>
+          <p class="order__description">
+            Get notified about company updates, news and blog posts. We hate spam.
+          </p>
+          <form>
+            <input type="email" class="order__email-input" value="Enter your email" name="" id="" />
+            <button class="action-button order__button">Get Started</button>
+          </form>
+          <p class="order__extra-info">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a href="#">Terms of Use</a>.
+          </p>
+        </div>
+      </section>
       <footer class="footer">
         <div>
-          <div class="logo">
+          <div class="logo footer__logo">
             <img class="logo__img" src="./images/logo-negative.svg" alt="logo" />
             <div class="logo__text-label">
               <h6 class="logo__name">Foundation</h6>
@@ -260,7 +317,7 @@
             Foundation is a website template for startups and small teams. It helps to build a
             website in no time.
           </p>
-          <div>
+          <div class="footer__buttons-wrap">
             <button class="footer__button"></button> <button class="footer__button"></button>
           </div>
         </div>

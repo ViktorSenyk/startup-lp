@@ -1,0 +1,40 @@
+.engage-mobile {
+  display: none;
+}
+
+@media (max-width: 401px) {
+  .engage-mobile {
+    display: block;
+    width: 100%;
+    padding: 41px 15px 40px;
+    border-bottom: 1px solid rgba(227, 227, 227, 1);
+    &__first-title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 34px;
+        color: rgba(0, 155, 77, 1);
+    }
+    &__second-title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.34px;
+        margin: 17px 0 24px;
+    }
+    &__text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+    }
+    &__banner {
+        margin: 28px 0 16px;
+    }
+    &__caption {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        color: rgba(43, 41, 45, 0.6);
+    }
+  }
+}

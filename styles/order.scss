@@ -1,0 +1,91 @@
+.order {
+  background-color: rgba(244, 245, 247, 1);
+  padding: 50px 15px;
+  margin: 0 auto;
+  text-align: center;
+  &__banner {
+    background: url(../images/order-mobile-banner.png) center no-repeat;
+    width: 200px;
+    height: 220px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+    margin: 40px 0 18px;
+  }
+  &__description {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 78px;
+    text-align: start;
+  }
+  &__email-input {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__button {
+    width: 100%;
+    margin: 12px 0 10px;
+  }
+  &__extra-info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: start;
+    color: rgba(43, 41, 45, 0.6);
+    & a {
+      color: rgba(49, 66, 198, 1);
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 402px) {
+  .order {
+    padding: 72px 0 72px;
+    display: flex;
+    &__banner {
+      background: url(../images/order-desktop-banner.png) center no-repeat;
+      width: 269px;
+      height: 296px;
+      margin: 0 0 0 224px;
+    }
+    &__wrap {
+      max-width: 556px;
+      text-align: left;
+      margin: -6px 0 0 124px;
+    }
+    &__title {
+        margin: 40px 0 19px;
+    }
+
+
+    &__description {
+      margin: 0 0 0 -2px;
+    }
+    &__email-input {
+      width: 385px;
+      text-align: left;
+      padding: 0 13px;
+      margin: 26px 5px 10px 0;
+    }
+    &__button {
+      width: 160px;
+      margin: 0;
+    }
+    &__extra-info {
+      & a {
+        color: rgba(49, 66, 198, 1);
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+}

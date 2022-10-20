@@ -27,10 +27,38 @@
   cursor: pointer;
   margin-bottom: 14px;
 }
-
-.navigation {
+.header__navigation-wrapper {
   margin-left: auto;
   margin-bottom: 21px;
+}
+.header__navigation-list {
+  width: 273px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.header__navigation-item > a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.header__navigation-item:nth-child(3) {
+  position: relative;
+}
+.header__navigation-item:nth-child(3)::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 5px;
+  position: absolute;
+  top: 9px;
+  right: -19px;
+  background: url(../images/arrow.svg);
+}
+.header__navigation-item_select > a {
+  font-weight: 700;
+  color: rgb(43, 41, 45);
 }
 
 .logo {
@@ -41,7 +69,7 @@
   height: 68px;
   margin: 1px 9px 0 0;
 }
-.logo__text-label {
+.logo__text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -55,42 +83,6 @@
   font-size: 18px;
   font-weight: 400;
   color: rgba(43, 41, 45, 0.6);
-}
-
-.nav-list {
-  width: 273px;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-.nav-list__item > a {
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-}
-.nav-list__item:nth-child(3) {
-  position: relative;
-}
-.nav-list__item:nth-child(3)::after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 5px;
-  position: absolute;
-  top: 9px;
-  right: -19px;
-  background: url(../images/arrow.svg);
-}
-.nav-list__item_select > a {
-  font-weight: 700;
-  color: rgb(43, 41, 45);
-}
-
-.pinkBacground-lable {
-  min-height: 710px;
-  padding: 39px 0 77px;
-  background-color: rgb(243, 198, 189);
 }
 
 .footer {
@@ -120,63 +112,60 @@
   background: url(../images/google-play.svg);
   margin-left: 5px;
 }
-.footer__link-label {
+.footer__link-wrapper {
   min-width: 265px;
 }
-.footer__link-label:nth-child(2) {
+.footer__link-wrapper:nth-child(2) {
   margin: 0 29px 0 126px;
 }
-.footer__link-label > h6 {
+.footer__link-wrapper > h6 {
   font-size: 22px;
   font-weight: 700;
   color: rgb(43, 41, 45);
   margin-bottom: 18px;
 }
-.footer__extraLink-label {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
-.productAndCompany-links {
+.footer__links-list {
   list-style: none;
 }
-.productAndCompany-links__item > a {
+.footer__link > a {
   text-decoration: none;
   color: rgba(43, 41, 45, 0.6);
   font-size: 18px;
   line-height: 30px;
 }
-
-.extraLinks {
+.footer__extra-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.footer__bottom-links {
   min-width: 180px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-.extraLinks__textItem > a {
+.footer__bottom-link > a {
   text-decoration: none;
   color: rgba(43, 41, 45, 0.6);
   font-size: 14px;
   font-weight: 400;
 }
-
-.extraIcons {
+.footer__bottom-icons {
   min-width: 97px;
 }
-.extraIcons__item > a {
+.footer__bottom-icon > a {
   display: inline-block;
   width: 18px;
   height: 17px;
   background: url(../images/linkedIn.svg);
 }
-.extraIcons__item:nth-child(1) > a {
+.footer__bottom-icon:first-child > a {
   width: 21px;
   height: 16px;
   background: url(../images/icon-twitter.svg);
 }
-.extraIcons__item:nth-child(2) > a {
+.footer__bottom-icon:nth-child(2) > a {
   background: url(../images/icon-fb.svg);
 }
 
@@ -237,19 +226,19 @@
   justify-content: space-between;
   padding: 77px 131px 73px 130px;
 }
-.about__text-label {
+.about__text-wrapper {
   width: 555px;
   min-height: 102px;
 }
-.about__text-label > h6,
-.about__text-label p {
+.about__text-wrapper > h6,
+.about__text-wrapper p {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
   color: rgb(43, 41, 45);
   margin-top: 1px;
 }
-.about__text-label > p {
+.about__text-wrapper > p {
   font-weight: 400;
   margin-top: 8px;
   letter-spacing: 0.05px;
@@ -271,7 +260,7 @@
   margin: auto;
   background-repeat: no-repeat;
 }
-.customers_secondSection {
+.customers_second-section {
   padding-left: 2px;
 }
 
@@ -285,31 +274,30 @@
 .features__small-banner {
   position: absolute;
   left: 0;
-  bottom: 318px;
+  bottom: 281px;
 }
 .features__big-banner {
   position: absolute;
   right: 0;
-  bottom: 140px;
+  bottom: 103px;
 }
-
-.features-text {
+.features__content-wrapper {
   width: 458px;
 }
-.features-text__firstTitle {
+.features__first-title {
   font-size: 22px;
   font-weight: 700;
   color: rgb(0, 155, 77);
   margin-left: 2px;
 }
-.features-text__secondTitle {
+.features__second-title {
   font-size: 56px;
   line-height: 56px;
   letter-spacing: -0.5px;
   color: rgb(43, 41, 45);
   margin: 28px 0 30px;
 }
-.features-text__underTitle-description {
+.features__description-text {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
@@ -317,14 +305,14 @@
   margin-bottom: 43px;
   margin-left: 2px;
 }
-.features-text__clickLink {
+.features__click-block {
   position: relative;
   width: 100%;
   margin-bottom: 44px;
   cursor: pointer;
   margin-left: 3px;
 }
-.features-text__clickLink::after {
+.features__click-block::after {
   content: "";
   display: block;
   width: 100%;
@@ -333,7 +321,7 @@
   position: absolute;
   bottom: -23px;
 }
-.features-text__clickLink > h6 {
+.features__click-block > h6 {
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
@@ -341,7 +329,7 @@
   position: relative;
   padding-left: 39px;
 }
-.features-text__clickLink > h6::before {
+.features__click-block > h6::before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -352,21 +340,21 @@
   left: 0;
   filter: brightness(0);
 }
-.features-text__clickLink:nth-child(5) {
+.features__click-block:nth-child(5) {
   margin-bottom: 46px;
 }
-.features-text__clickLink:nth-child(5) > h6::before {
+.features__click-block:nth-child(5) > h6::before {
   background: url(../images/house.svg);
   top: -1px;
   left: 1px;
   height: 25px;
 }
-.features-text__clickLink:nth-child(6) > h6::before {
+.features__click-block:nth-child(6) > h6::before {
   background: url(../images/busket.svg) center no-repeat;
   top: 1px;
   left: 1px;
 }
-.features-text__clickLink > p {
+.features__click-block > p {
   font-size: 18px;
   font-weight: 400;
   margin-top: 9px;
@@ -374,13 +362,13 @@
   color: rgb(43, 41, 45);
   letter-spacing: 0.06px;
 }
-.features-text__clickLink_active > h6 {
+.features__click-block_active > h6 {
   color: rgb(49, 66, 198);
 }
-.features-text__clickLink_active > h6::before {
+.features__click-block_active > h6::before {
   filter: brightness(1);
 }
-.features-text__clickLink_active::after {
+.features__click-block_active::after {
   background-color: rgb(49, 66, 198);
   height: 3px;
 }
@@ -393,11 +381,11 @@
   color: rgb(43, 41, 45);
   text-align: center;
 }
-.audience__firstTitle {
+.audience__first-title {
   font-size: 22px;
   font-weight: 700;
 }
-.audience__secondTitle {
+.audience__second-title {
   max-width: 555px;
   font-size: 56px;
   font-weight: 700;
@@ -412,13 +400,13 @@
   line-height: 34px;
   margin: 0 auto 38px;
 }
-.audience__learnMore {
+.audience__learn-more {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
   color: rgb(0, 0, 0);
   margin: 0 0 111px 3px;
   padding-top: 1px;
 }
-.audience__cads-label {
+.audience__cads-wrapper {
   width: 1139px;
   height: 300px;
   display: flex;
@@ -429,6 +417,7 @@
 .audience-card {
   display: flex;
   width: 262px;
+  height: 300px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(../images/audience-card1.png) no-repeat center 22px;
   justify-content: center;
   align-items: flex-end;
@@ -474,26 +463,25 @@
   color: rgba(43, 41, 45, 0.6);
   margin-top: 13px;
 }
-
-.inbox-content {
+.inbox__content-wrapper {
   width: 519px;
   color: rgb(43, 41, 45);
 }
-.inbox-content__firstTitle {
+.inbox__first-title {
   font-size: 22px;
   font-weight: 700;
   color: rgb(241, 89, 43);
   line-height: 34px;
   margin-left: 29px;
 }
-.inbox-content__secondTitle {
+.inbox__second-title {
   font-size: 56px;
   font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 56px;
   margin: 24px 0 30px 27px;
 }
-.inbox-content__underTitleText {
+.inbox__description-text {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
@@ -549,23 +537,23 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.communication__contentLabel {
+.communication__content-wrapper {
   width: 461px;
 }
-.communication__firstTitle {
+.communication__first-title {
   font-size: 22px;
   font-weight: 700;
   line-height: 34px;
   color: rgb(1, 137, 209);
 }
-.communication__secondTitle {
+.communication__second-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -0.5px;
   margin: 23px 0 30px -2px;
 }
-.communication__underTitleText {
+.communication__description-text {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
@@ -598,30 +586,30 @@
   color: rgba(43, 41, 45, 0.6);
   margin-top: 13px;
 }
-.communication__moreCards {
+.communication__cards-wrapper {
   display: flex;
   margin-left: 3px;
 }
-.communication__moreCards > div {
+.communication__cards-wrapper > div {
   width: 360px;
   height: 115px;
   margin-right: 30px;
 }
-.communication__moreCards > div:nth-child(3) {
+.communication__cards-wrapper > div:nth-child(3) {
   width: 361px;
 }
-.communication__moreCards > div > p {
+.communication__cards-wrapper > div > p {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 6px;
 }
-.communication__moreCards > div > p > span {
+.communication__cards-wrapper > div > p > span {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
-.communication__moreCards > div > a {
+.communication__cards-wrapper > div > a {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -639,6 +627,12 @@
   height: 1px;
   background-color: rgba(43, 41, 45, 0.1);
   bottom: 50px;
+}
+
+.pinkBacground-wrapper {
+  min-height: 710px;
+  padding: 39px 0 77px;
+  background-color: rgb(243, 198, 189);
 }
 
 /*# sourceMappingURL=styles.css.map */

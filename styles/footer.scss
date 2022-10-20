@@ -24,7 +24,7 @@
       margin-left: 5px;
     }
   }
-  &__link-label {
+  &__link-wrapper {
     min-width: 265px;
     &:nth-child(2) {
       margin: 0 29px 0 126px;
@@ -36,51 +36,50 @@
       margin-bottom: 18px;
     }
   }
-  &__extraLink-label {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
+  &__links-list {
+    list-style: none;
   }
-}
-
-.productAndCompany-links {
-  list-style: none;
-  &__item > a {
+  &__link > a {
     text-decoration: none;
     color: rgba(43, 41, 45, 0.6);
     font-size: 18px;
     line-height: 30px;
   }
-}
-
-.extraLinks {
-  min-width: 180px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  &__textItem > a {
+  &__extra-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  &__bottom-links {
+    min-width: 180px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__bottom-link > a {
     text-decoration: none;
     color: rgba(43, 41, 45, 0.6);
     font-size: 14px;
     font-weight: 400;
   }
-}
-
-.extraIcons {
-  min-width: 97px;
-  &__item > a {
-    display: inline-block;
-    width: 18px;
-    height: 17px;
-    background: url(../images/linkedIn.svg);
+  &__bottom-icons {
+    min-width: 97px;
   }
-  &__item:nth-child(1) > a {
-    width: 21px;
-    height: 16px;
-    background: url(../images/icon-twitter.svg);
-  }
-  &__item:nth-child(2) > a {
-    background: url(../images/icon-fb.svg);
+  &__bottom-icon {
+    & > a {
+      display: inline-block;
+      width: 18px;
+      height: 17px;
+      background: url(../images/linkedIn.svg);
+    }
+    &:first-child > a {
+      width: 21px;
+      height: 16px;
+      background: url(../images/icon-twitter.svg);
+    }
+    &:nth-child(2) > a {
+      background: url(../images/icon-fb.svg);
+    }
   }
 }

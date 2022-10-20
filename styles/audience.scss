@@ -5,11 +5,11 @@
   background-color: rgba(0, 161, 198, 0.07);
   color: rgba(43, 41, 45, 1);
   text-align: center;
-  &__firstTitle {
+  &__first-title {
     font-size: 22px;
     font-weight: 700;
   }
-  &__secondTitle {
+  &__second-title {
     max-width: 555px;
     font-size: 56px;
     font-weight: 700;
@@ -24,7 +24,7 @@
     line-height: 34px;
     margin: 0 auto 38px;
   }
-  &__learnMore {
+  &__learn-more {
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0.05) 0%,
@@ -35,7 +35,7 @@
     margin: 0 0 111px 3px;
     padding-top: 1px;
   }
-  &__cads-label {
+  &__cads-wrapper {
     width: 1139px;
     height: 300px;
     display: flex;
@@ -47,6 +47,7 @@
 .audience-card {
   display: flex;
   width: 262px;
+  height: 300px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
     #ffffff url(../images/audience-card1.png) no-repeat center 22px;
   justify-content: center;

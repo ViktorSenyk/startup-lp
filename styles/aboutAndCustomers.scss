@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding: 77px 131px 73px 130px;
-  &__text-label {
+  &__text-wrapper {
     width: 555px;
     min-height: 102px;
     & > h6,
@@ -39,7 +39,7 @@
       background-repeat: no-repeat;
     }
   }
-  &_secondSection {
+  &_second-section {
     padding-left: 2px;
   }
 }

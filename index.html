@@ -19,20 +19,22 @@
   </head>
   <body>
     <div class="page">
-      <div class="pinkBacground-lable">
+      <div class="pinkBacground-wrapper">
         <header class="header">
           <div class="logo">
             <img class="logo__img" src="./images/logo.svg" alt="logo" />
-            <div class="logo__text-label">
+            <div class="logo__text-wrapper">
               <h6 class="logo__name">Foundation</h6>
               <p class="logo__description">Startup landing template</p>
             </div>
           </div>
-          <nav class="navigation">
-            <ul class="nav-list">
-              <li class="nav-list__item nav-list__item_select"><a href="#">Home</a></li>
-              <li class="nav-list__item"><a href="#">Stories</a></li>
-              <li class="nav-list__item"><a href="#">Library</a></li>
+          <nav class="header__navigation-wrapper">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item header__navigation-item_select">
+                <a href="#">Home</a>
+              </li>
+              <li class="header__navigation-item"><a href="#">Stories</a></li>
+              <li class="header__navigation-item"><a href="#">Library</a></li>
             </ul>
           </nav>
           <button class="header__button">Get Started</button>
@@ -50,13 +52,13 @@
         </section>
       </div>
       <section class="about">
-        <div class="about__text-label">
+        <div class="about__text-wrapper">
           <h6>What is it about?</h6>
           <p>
             Building a website for a startup that looks amazing is not a rocket science anymore.
           </p>
         </div>
-        <div class="about__text-label">
+        <div class="about__text-wrapper">
           <h6>Who is it for?</h6>
           <p>Startups, small companies and teams, entrepreneurs and web developers.</p>
         </div>
@@ -80,23 +82,23 @@
         /></a>
       </section>
       <section class="features">
-        <div class="features__content-label features-text">
-          <h6 class="features-text__firstTitle">Features</h6>
-          <h2 class="features-text__secondTitle">Easily find leads and customers</h2>
-          <p class="features-text__underTitle-description">
+        <div class="features__content-wrapper">
+          <h6 class="features__first-title">Features</h6>
+          <h2 class="features__second-title">Easily find leads and customers</h2>
+          <p class="features__description-text">
             Send one-off and automated email, push, and in-app messages to people. Create better
             stories.
           </p>
-          <div class="features-text__clickLink features-text__clickLink_active">
+          <div class="features__click-block features__click-block_active">
             <h6>Acquire new customers</h6>
             <p>
               Everything you need to start building – including open-source code, documentation.
             </p>
           </div>
-          <div class="features-text__clickLink">
+          <div class="features__click-block">
             <h6>Engage users</h6>
           </div>
-          <div class="features-text__clickLink">
+          <div class="features__click-block">
             <h6>Develop across platforms</h6>
           </div>
         </div>
@@ -112,10 +114,10 @@
           <img src="./images/inbox-banner.png" alt="banner" />
           <p>Connect with customers and grow faster</p>
         </div>
-        <div class="inbox-content">
-          <h6 class="inbox-content__firstTitle">Team Inbox</h6>
-          <h2 class="inbox-content__secondTitle">Manage conversations</h2>
-          <p class="inbox-content__underTitleText">
+        <div class="inbox__content-wrapper">
+          <h6 class="inbox__first-title">Team Inbox</h6>
+          <h2 class="inbox__second-title">Manage conversations</h2>
+          <p class="inbox__description-text">
             One place to manage and respond to<br />
             all conversations with leads and users. Receive messages from leads.
           </p>
@@ -135,10 +137,10 @@
         </div>
       </section>
       <section class="communication">
-        <div class="communication__contentLabel">
-          <h6 class="communication__firstTitle">Communicate Better</h6>
-          <h2 class="communication__secondTitle">Built for busy small teams</h2>
-          <p class="communication__underTitleText">
+        <div class="communication__content-wrapper">
+          <h6 class="communication__first-title">Communicate Better</h6>
+          <h2 class="communication__second-title">Built for busy small teams</h2>
+          <p class="communication__description-text">
             Three products that can be used independently or combined together for your company’s
             needs.
           </p>
@@ -148,7 +150,7 @@
           <img src="./images/communication-banner.png" alt="banner" />
           <p>A better way to acquire new users</p>
         </div>
-        <div class="communication__moreCards">
+        <div class="communication__cards-wrapper">
           <div>
             <p>
               <span>Subscriptions.</span> Foundation works with the tools and services you already
@@ -173,23 +175,23 @@
         </div>
       </section>
       <section class="audience">
-        <h6 class="audience__firstTitle">Engage Visitors</h6>
-        <h2 class="audience__secondTitle">Understand your audience</h2>
+        <h6 class="audience__first-title">Engage Visitors</h6>
+        <h2 class="audience__second-title">Understand your audience</h2>
         <p class="audience__text">
           Early stage company? Eligible applicants get all of our products for just $49 a month.
         </p>
         <div>
-          <button class="action-button audience__getStarted">Get Started</button>
-          <button class="action-button audience__learnMore">Learn More</button>
+          <button class="action-button audience__get-started">Get Started</button>
+          <button class="action-button audience__learn-more">Learn More</button>
         </div>
-        <div class="audience__cads-label">
+        <div class="audience__cads-wrapper">
           <a href="#" class="audience-card">Developers</a>
           <a href="#" class="audience-card">Entertainment</a>
           <a href="#" class="audience-card">Athletes</a>
           <a href="#" class="audience-card">Creators</a>
         </div>
       </section>
-      <section class="customers customers_secondSection">
+      <section class="customers customers_second-section">
         <a href="#" class="customers__icon"
           ><img src="./images/customer-nyt.svg" alt="The New York Times"
         /></a>
@@ -224,35 +226,39 @@
             <button class="footer__button"></button> <button class="footer__button"></button>
           </div>
         </div>
-        <nav class="footer__link-label">
+        <nav class="footer__link-wrapper">
           <h6>Product</h6>
-          <ul class="productAndCompany-links">
-            <li class="productAndCompany-links__item"><a href="#">Acquire Users</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Content Marketing</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Website Templates</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Customer Management</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Virtual Inbox</a></li>
+          <ul class="footer__links-list">
+            <li class="footer__link"><a href="#">Acquire Users</a></li>
+            <li class="footer__link"><a href="#">Content Marketing</a></li>
+            <li class="footer__link"><a href="#">Website Templates</a></li>
+            <li class="footer__link"><a href="#">Customer Management</a></li>
+            <li class="footer__link"><a href="#">Virtual Inbox</a></li>
           </ul>
         </nav>
-        <nav class="footer__link-label">
+        <nav class="footer__link-wrapper">
           <h6>Company</h6>
-          <ul class="productAndCompany-links">
-            <li class="productAndCompany-links__item"><a href="#">About Foundation</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Brand Guidelines</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Press Kit</a></li>
-            <li class="productAndCompany-links__item"><a href="#">Support</a></li>
+          <ul class="footer__links-list">
+            <li class="footer__link">
+              <a href="#">About Foundation</a>
+            </li>
+            <li class="footer__link">
+              <a href="#">Brand Guidelines</a>
+            </li>
+            <li class="footer__link"><a href="#">Press Kit</a></li>
+            <li class="footer__link"><a href="#">Support</a></li>
           </ul>
         </nav>
-        <nav class="footer__extraLink-label">
-          <ul class="extraLinks">
-            <li class="extraLinks__textItem"><a href="#">Terms</a></li>
-            <li class="extraLinks__textItem"><a href="#">Privacy</a></li>
-            <li class="extraLinks__textItem"><a href="#">License</a></li>
+        <nav class="footer__extra-wrapper">
+          <ul class="footer__bottom-links">
+            <li class="footer__bottom-link"><a href="#">Terms</a></li>
+            <li class="footer__bottom-link"><a href="#">Privacy</a></li>
+            <li class="footer__bottom-link"><a href="#">License</a></li>
           </ul>
-          <ul class="extraLinks extraIcons">
-            <li class="extraIcons__item"><a href="#"></a></li>
-            <li class="extraIcons__item"><a href="#"></a></li>
-            <li class="extraIcons__item"><a href="#"></a></li>
+          <ul class="footer__bottom-links footer__bottom-icons">
+            <li class="footer__bottom-icon"><a href="#"></a></li>
+            <li class="footer__bottom-icon"><a href="#"></a></li>
+            <li class="footer__bottom-icon"><a href="#"></a></li>
           </ul>
         </nav>
       </footer>

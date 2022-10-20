@@ -54,7 +54,7 @@
   position: absolute;
   top: 9px;
   right: -19px;
-  background: url(../images/arrow.svg);
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 .header__navigation-item_select > a {
   font-weight: 700;
@@ -201,15 +201,15 @@
   display: inline-block;
   width: 18px;
   height: 17px;
-  background: url(../images/linkedIn.svg);
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
 }
 .footer__bottom-icon:first-child > a {
   width: 21px;
   height: 16px;
-  background: url(../images/icon-twitter.svg);
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
 }
 .footer__bottom-icon:nth-child(2) > a {
-  background: url(../images/icon-fb.svg);
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
 }
 .footer__logo > div {
   padding-top: 7px;
@@ -665,7 +665,7 @@
   display: flex;
   width: 262px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(../images/audience-card1.png) no-repeat center 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png) no-repeat center 22px;
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 33px;
@@ -676,13 +676,13 @@
   border-radius: 8px;
 }
 .audience-card:nth-child(2) {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(../images/audience-card2.png) no-repeat center 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png) no-repeat center 22px;
 }
 .audience-card:nth-child(3) {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(../images/audience-card3.png) no-repeat center 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png) no-repeat center 22px;
 }
 .audience-card:nth-child(4) {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(../images/audience-card4.png) no-repeat center 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png) no-repeat center 22px;
 }
 .audience-card:hover {
   background-color: rgb(49, 65, 197);
@@ -1250,7 +1250,7 @@
   text-align: center;
 }
 .order__banner {
-  background: url(../images/order-mobile-banner.png) center no-repeat;
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
   width: 200px;
   height: 220px;
   margin: 0 auto;

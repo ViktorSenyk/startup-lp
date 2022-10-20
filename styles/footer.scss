@@ -74,15 +74,15 @@
       display: inline-block;
       width: 18px;
       height: 17px;
-      background: url(../images/linkedIn.svg);
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
     }
     &:first-child > a {
       width: 21px;
       height: 16px;
-      background: url(../images/icon-twitter.svg);
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
     }
     &:nth-child(2) > a {
-      background: url(../images/icon-fb.svg);
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
     }
   }
   &__logo {

@@ -46,7 +46,7 @@
       content: '';
       width: 8px;
       height: 12px;
-      background: url(../images/hiring-arrow.svg);
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
       position: absolute;
       filter: brightness(60%);
       right: 23.5px;
@@ -64,6 +64,7 @@
     &:hover {
       background-color: rgba(49, 65, 197, 1);
       &::after {
+        background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
         filter: brightness(100%);
       }
       & > h6,

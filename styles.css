@@ -108,7 +108,7 @@
     height: 100%;
     border: none;
     border-left: 1px solid rgba(0, 0, 0, 0.15);
-    background: url(../images/header-mobile-menu.svg) center no-repeat;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png) center no-repeat;
     cursor: pointer;
   }
   .logo {
@@ -1152,7 +1152,7 @@
   content: "";
   width: 8px;
   height: 12px;
-  background: url(../images/hiring-arrow.svg);
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
   position: absolute;
   filter: brightness(60%);
   right: 23.5px;
@@ -1171,6 +1171,7 @@
   background-color: rgb(49, 65, 197);
 }
 .hiring__card:hover::after {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
   filter: brightness(100%);
 }
 .hiring__card:hover > h6,
@@ -1254,6 +1255,7 @@
   width: 200px;
   height: 220px;
   margin: 0 auto;
+  background-size: contain;
 }
 .order__title {
   font-size: 40px;
@@ -1298,7 +1300,7 @@
     display: flex;
   }
   .order__banner {
-    background: url(../images/order-desktop-banner.png) center no-repeat;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
     width: 269px;
     height: 296px;
     margin: 0 0 0 224px;

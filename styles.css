@@ -25,11 +25,9 @@
   border-radius: 2px;
   margin-left: 75px;
   cursor: pointer;
-  margin-bottom: 14px;
 }
 .header__navigation-wrapper {
   margin-left: auto;
-  margin-bottom: 21px;
 }
 .header__navigation-list {
   width: 273px;
@@ -68,7 +66,7 @@
 }
 .logo__img {
   width: 66px;
-  height: 68px;
+  height: 60px;
   margin: 1px 9px 0 0;
 }
 .logo__text-wrapper {
@@ -138,7 +136,7 @@
   color: rgba(43, 41, 45, 0.6);
   width: 360px;
   line-height: 26px;
-  margin: 22px 0 31px;
+  margin: 26px 0 31px;
 }
 .footer__button {
   width: 135px;
@@ -213,9 +211,6 @@
 }
 .footer__logo > div {
   padding-top: 7px;
-}
-.footer__logo > img {
-  margin-top: -3px;
 }
 
 @media (max-width: 1400px) {
@@ -870,7 +865,7 @@
   }
 }
 .communication {
-  width: 1440px;
+  width: 1400px;
   margin: 14px auto 0;
   padding: 110px 126px 109px 128px;
   display: flex;
@@ -915,7 +910,7 @@
 }
 .communication__banner {
   text-align: center;
-  margin-right: 106px;
+  margin-right: 65px;
 }
 .communication__banner > img {
   margin: -14px 1px 0 0;
@@ -1386,7 +1381,7 @@
 }
 .page {
   width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
 }
 .page__line-for-footer {

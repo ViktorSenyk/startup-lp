@@ -10,7 +10,7 @@
     color: rgba(43, 41, 45, 0.6);
     width: 360px;
     line-height: 26px;
-    margin: 22px 0 31px;
+    margin: 26px 0 31px;
   }
   &__button {
     width: 135px;
@@ -88,9 +88,6 @@
   &__logo {
     & > div {
       padding-top: 7px;
-    }
-    & > img {
-      margin-top: -3px;
     }
   }
 }

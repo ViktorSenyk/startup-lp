@@ -1274,6 +1274,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 400;
+  text-align: center;
 }
 .order__button {
   width: 100%;
@@ -1318,6 +1319,7 @@
     text-align: left;
     padding: 0 13px;
     margin: 26px 5px 10px 0;
+    text-align: center;
   }
   .order__button {
     width: 160px;

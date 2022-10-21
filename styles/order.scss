@@ -4,7 +4,8 @@
   margin: 0 auto;
   text-align: center;
   &__banner {
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png)
+      center no-repeat;
     width: 200px;
     height: 220px;
     margin: 0 auto;
@@ -30,6 +31,7 @@
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
   }
   &__button {
     width: 100%;
@@ -53,7 +55,8 @@
     padding: 72px 0 72px;
     display: flex;
     &__banner {
-      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
+      background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png)
+        center no-repeat;
       width: 269px;
       height: 296px;
       margin: 0 0 0 224px;
@@ -75,6 +78,7 @@
       text-align: left;
       padding: 0 13px;
       margin: 26px 5px 10px 0;
+      text-align: center;
     }
     &__button {
       width: 160px;

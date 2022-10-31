@@ -1,12 +1,11 @@
 .feedback {
-  width: 1400px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 0 66px 0;
-  position: relative;
+  margin: 0 auto;
   &__wrap {
     text-align: center;
   }
@@ -17,10 +16,10 @@
     color: rgba(49, 66, 198, 1);
   }
   &__comment {
+    max-width: 750px;
     font-size: 24px;
     font-weight: 400;
     line-height: 34px;
-    max-width: 750px;
     margin: 28px 0 34px 20px;
   }
   &__user-name {
@@ -35,17 +34,17 @@
     color: rgba(43, 41, 45, 0.6);
   }
   &__buttons-wrap {
-    margin-top: 38px;
-    width: 50px;
     display: flex;
     justify-content: space-between;
+    width: 50px;
+    margin-top: 38px;
   }
   &__button {
     width: 8px;
     height: 8px;
-    border-radius: 50%;
     background-color: rgba(43, 41, 45, 0.2);
     border: none;
+    border-radius: 50%;
     cursor: pointer;
     &_select {
       background-color: rgba(49, 66, 197, 1);
@@ -53,16 +52,16 @@
   }
   &__banner {
     position: absolute;
-    width: 273px;
     right: 26px;
     bottom: -1px;
+    width: 273px;
   }
 }
 
-@media (max-width: 1400px) {
+@include small-screen {
   .feedback {
-    width: 100%;
     display: block;
+    width: 100%;
     padding: 37px 15px 46px;
     &__wrap {
       text-align: start;
@@ -72,8 +71,8 @@
       margin: 29px 0 32px;
     }
     &__buttons-wrap {
-      margin: 41px auto 0;
       width: 75px;
+      margin: 41px auto 0;
     }
     &__button {
       width: 12px;

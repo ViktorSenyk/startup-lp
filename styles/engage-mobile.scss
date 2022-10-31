@@ -2,12 +2,12 @@
   display: none;
 }
 
-@media (max-width: 1400px) {
+@include small-screen {
   .engage-mobile {
     display: block;
     width: 100%;
-    padding: 41px 15px 40px;
     border-bottom: 1px solid rgba(227, 227, 227, 1);
+    padding: 41px 15px 40px;
     &__first-title {
       font-size: 22px;
       font-weight: 700;

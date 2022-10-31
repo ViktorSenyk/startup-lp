@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 1400px) {
+@include small-screen {
   .support-mobile {
     display: block;
     &__second-title {

@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
-  color: rgba(43, 41, 45, 1);
 }
-
+html, a {
+  color: rgba(43, 41, 45, 1);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+}
+@import 'breakpoints';
 @import 'header';
 @import 'footer';
 @import 'headline';
@@ -23,15 +25,15 @@
 @import 'support-mobile';
 
 .page {
+  position: relative;
   width: 1400px;
   margin: 0 auto;
-  position: relative;
   &__line-for-footer {
     position: absolute;
+    bottom: 50px;
     width: 100%;
     height: 1px;
     background-color: rgba(43, 41, 45, 0.1);
-    bottom: 50px;
   }
 }
 
@@ -41,7 +43,7 @@
   background-color: rgba(243, 198, 189, 1);
 }
 
-@media (max-width: 1400px) {
+@include small-screen {
   .page {
     width: 320px;
     &__line-for-footer {

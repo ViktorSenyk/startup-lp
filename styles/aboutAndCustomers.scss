@@ -1,42 +1,41 @@
 .about {
-  width: 1400px;
-  min-height: 255px;
-  background-color: rgba(244, 245, 247, 1);
   display: flex;
   justify-content: space-between;
+  min-height: 255px;
+  background-color: rgba(244, 245, 247, 1);
   padding: 77px 131px 73px 130px;
   &__text-wrapper {
     width: 555px;
     min-height: 102px;
-    & > h6,
-    p {
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 32px;
-      color: rgba(43, 41, 45, 1);
-      margin-top: 1px;
-    }
-    & > p {
-      font-weight: 400;
-      margin-top: 8px;
-      letter-spacing: 0.05px;
-    }
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 1px;
+  }
+  &__description {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.05px;
+    margin-top: 8px;
   }
 }
 
 .customers {
-  max-width: 1140px;
-  height: 75px;
   display: flex;
   justify-content: space-between;
+  max-width: 1140px;
+  height: 75px;
   margin: 30px auto 106px;
   &__icon {
     display: flex;
     & > img {
-      filter: brightness(0);
       max-width: 100%;
-      margin: auto;
+      filter: brightness(0);
       background-repeat: no-repeat;
+      margin: auto;
     }
   }
   &_second-section {
@@ -45,38 +44,36 @@
   }
 }
 
-@media (max-width: 1400px) {
+@include small-screen {
   .about {
-    width: 100%;
     display: block;
     padding: 46px 15px 45px;
     &__text-wrapper {
       width: 100%;
-      & > h6,
-      p {
-        margin: 0;
-      }
-      & > p {
-        letter-spacing: normal;
-        margin: 9px 0 0 0;
-      }
       &:first-child {
         margin-bottom: 31px;
       }
     }
+    &__title {
+      margin: 0;
+    }
+    &__description {
+      margin: 0;
+      letter-spacing: normal;
+      margin: 9px 0 0 0;
+    }
   }
 
   .customers {
-    width: 100%;
-    height: auto;
     justify-content: flex-start;
     flex-wrap: wrap;
+    height: auto;
     margin: 0;
     &__icon {
-      width: 106px;
-      height: 95.5px;
       justify-content: center;
       align-items: center;
+      width: 106px;
+      height: 95.5px;
       border: 1px solid rgba(227, 227, 227, 1);
       & > img {
         width: 73%;

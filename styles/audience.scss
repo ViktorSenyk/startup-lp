@@ -1,9 +1,8 @@
 .audience {
-  width: 1400px;
+  text-align: center;
+  background-color: rgba(0, 161, 198, 0.07);
   padding: 114px 0 110px;
   margin: 0 auto 44px;
-  background-color: rgba(0, 161, 198, 0.07);
-  text-align: center;
   &__first-title {
     font-size: 22px;
     font-weight: 700;
@@ -12,9 +11,9 @@
     max-width: 555px;
     font-size: 56px;
     font-weight: 700;
+    line-height: 56px;
     letter-spacing: -0.5px;
     margin: 27px auto 30px;
-    line-height: 56px;
   }
   &__text {
     max-width: 555px;
@@ -31,56 +30,37 @@
       ),
       #ffffff;
     color: rgba(0, 0, 0, 1);
-    margin: 0 0 111px 3px;
     padding-top: 1px;
+    margin: 0 0 111px 3px;
   }
   &__cads-wrapper {
-    width: 1139px;
-    height: 300px;
     display: flex;
     justify-content: space-between;
+    width: 1139px;
+    height: 300px;
     margin: 0 auto;
   }
 }
 
 .user-card {
-  display: flex;
+  display: block;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: flex-end;
+  text-align: center;
   width: 262px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
-    #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png) no-repeat center 22px;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 33px;
-  text-decoration: none;
   font-size: 22px;
   font-weight: 700;
+  text-decoration: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%),
+    #ffffff;
   border-radius: 8px;
-  &:nth-child(2) {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 1e-5) 100%
-      ),
-      #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png) no-repeat center 22px;
-  }
-  &:nth-child(3) {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 1e-5) 100%
-      ),
-      #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png) no-repeat center 22px;
-  }
-  &:nth-child(4) {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(255, 255, 255, 1e-5) 100%
-      ),
-      #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png) no-repeat center 22px;
+  & > img {
+    display: block;
+    margin: 22px auto 24px;
   }
   &:hover {
     background-color: rgba(49, 65, 197, 1);
@@ -88,9 +68,8 @@
   }
 }
 
-@media (max-width: 1400px) {
+@include small-screen {
   .audience {
-    width: 100%;
     padding: 49px 15px 35px;
     margin: 0;
     &__first-title {
@@ -99,9 +78,9 @@
     &__second-title {
       width: 100%;
       font-size: 40px;
+      line-height: 40px;
       letter-spacing: -0.36px;
       margin: 17px 0;
-      line-height: 40px;
     }
     &__text {
       width: 100%;
@@ -109,24 +88,22 @@
     }
     &__learn-more {
       width: 100%;
-      margin: 12px 0 0 0;
       padding: 0;
+      margin: 12px 0 0 0;
     }
     &__get-started {
       width: 100%;
     }
     &__cads-wrapper {
-      width: 100%;
-      height: auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      height: auto;
       margin: 40px 0 0 0;
     }
   }
-
   .user-card {
-    display: flex;
     width: 100%;
     height: 300px;
     margin-bottom: 15px;

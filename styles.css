@@ -1,26 +1,29 @@
 * {
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
-  font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+html, a {
   color: rgb(43, 41, 45);
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
 }
 
 .header {
+  display: flex;
+  align-items: center;
   width: 1140px;
   height: 62px;
   margin: auto;
-  display: flex;
-  align-items: center;
 }
 .header__button {
   width: 160px;
   height: 48px;
-  background-color: rgb(48, 64, 196);
   font-weight: 700;
   font-size: 18px;
   color: rgb(255, 255, 255);
+  background-color: rgb(48, 64, 196);
   border: none;
   border-radius: 2px;
   margin-left: 75px;
@@ -30,10 +33,10 @@
   margin-left: auto;
 }
 .header__navigation-list {
-  width: 273px;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  width: 273px;
 }
 .header__navigation-item > a {
   text-decoration: none;
@@ -46,12 +49,12 @@
 }
 .header__navigation-item:nth-child(3)::after {
   content: "";
-  display: block;
-  width: 8px;
-  height: 5px;
   position: absolute;
   top: 9px;
   right: -19px;
+  display: block;
+  width: 8px;
+  height: 5px;
   background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
 }
 .header__navigation-item_select > a {
@@ -85,14 +88,14 @@
   color: rgba(43, 41, 45, 0.6);
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .header {
+    justify-content: space-between;
     width: 100%;
     height: 64px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
     padding: 0 0 0 15px;
-    justify-content: space-between;
   }
   .header__button {
     display: none;
@@ -125,18 +128,17 @@
   }
 }
 .footer {
-  min-height: 389px;
-  width: 100%;
-  padding: 43px 130px 0;
   display: flex;
   flex-wrap: wrap;
+  min-height: 389px;
+  padding: 43px 130px 0;
 }
 .footer__description {
-  font-weight: 400;
-  font-size: 18px;
-  color: rgba(43, 41, 45, 0.6);
   width: 360px;
+  font-size: 18px;
+  font-weight: 400;
   line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
   margin: 26px 0 31px;
 }
 .footer__button {
@@ -160,7 +162,7 @@
 .footer__link-wrapper:nth-child(3) {
   margin: 20px 0 0 0;
 }
-.footer__link-wrapper > h6 {
+.footer__links-title {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 18px;
@@ -170,55 +172,53 @@
 }
 .footer__link > a {
   text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
   font-size: 18px;
   line-height: 35px;
+  color: rgba(43, 41, 45, 0.6);
 }
 .footer__extra-wrapper {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 60px;
 }
 .footer__bottom-links {
-  min-width: 180px;
-  list-style: none;
   display: flex;
   justify-content: space-between;
+  min-width: 180px;
+  list-style: none;
 }
 .footer__bottom-link > a {
   text-decoration: none;
-  color: rgba(43, 41, 45, 0.6);
   font-size: 14px;
   font-weight: 400;
+  color: rgba(43, 41, 45, 0.6);
 }
 .footer__bottom-icons {
   min-width: 97px;
   margin: 1px 2px 0 0;
 }
-.footer__bottom-icon > a {
+.footer__bottom-icon {
   display: inline-block;
   width: 18px;
   height: 17px;
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png) center no-repeat;
 }
-.footer__bottom-icon:first-child > a {
-  width: 21px;
-  height: 16px;
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
-}
-.footer__bottom-icon:nth-child(2) > a {
+.footer__bottom-icon_fb {
   background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
+}
+.footer__bottom-icon_lk {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
 }
 .footer__logo > div {
   padding-top: 7px;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .footer {
-    padding: 39px 15px 22px;
     display: block;
     align-items: center;
+    padding: 39px 15px 22px;
   }
   .footer__buttons-wrap {
     margin: 0 0 69px 15px;
@@ -245,9 +245,9 @@
   }
   .footer__logo > div > h6 {
     text-align: center;
-    margin: 0;
     font-size: 20px;
     line-height: 25px;
+    margin: 0;
     margin-top: 10px;
   }
   .footer__link-wrapper {
@@ -263,8 +263,8 @@
     line-height: 35.2px;
   }
   .footer__extra-wrapper {
-    width: 100%;
     display: block;
+    width: 100%;
     margin: 0;
   }
   .footer__bottom-links {
@@ -280,13 +280,13 @@
   padding-left: 130px;
 }
 .headline__title {
+  position: relative;
+  z-index: 2;
   width: 754px;
   font-size: 80px;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: -0.5px;
-  position: relative;
-  z-index: 2;
   margin: 76px 0 0 -4px;
 }
 .headline__text {
@@ -298,17 +298,17 @@
 }
 .headline__banner {
   position: absolute;
-  bottom: -49px;
   right: 25px;
+  bottom: -49px;
 }
 .headline__action-button:nth-child(2) {
+  width: 157px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
   color: rgb(48, 64, 196);
   margin-left: 5px;
-  width: 157px;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .headline {
     position: relative;
     padding: 35px 15px 36px;
@@ -325,12 +325,12 @@
     margin: 29px 0 32px;
   }
   .headline__banner {
-    display: block;
-    width: 320px;
-    height: 180px;
     position: relative;
     bottom: 0px;
     right: 15px;
+    display: block;
+    width: 320px;
+    height: 180px;
   }
   .headline__action-button:first-child {
     width: 100%;
@@ -344,96 +344,93 @@
 .action-button {
   width: 160px;
   height: 48px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040c4;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  background-blend-mode: overlay, normal;
   font-size: 18px;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #3040c4;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background-blend-mode: overlay, normal;
+  border-radius: 2px;
   border: none;
   cursor: pointer;
 }
 
 .about {
-  width: 1400px;
-  min-height: 255px;
-  background-color: rgb(244, 245, 247);
   display: flex;
   justify-content: space-between;
+  min-height: 255px;
+  background-color: rgb(244, 245, 247);
   padding: 77px 131px 73px 130px;
 }
 .about__text-wrapper {
   width: 555px;
   min-height: 102px;
 }
-.about__text-wrapper > h6,
-.about__text-wrapper p {
+.about__title {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
-  color: rgb(43, 41, 45);
   margin-top: 1px;
 }
-.about__text-wrapper > p {
+.about__description {
+  font-size: 22px;
   font-weight: 400;
-  margin-top: 8px;
+  line-height: 32px;
   letter-spacing: 0.05px;
+  margin-top: 8px;
 }
 
 .customers {
-  max-width: 1140px;
-  height: 75px;
   display: flex;
   justify-content: space-between;
+  max-width: 1140px;
+  height: 75px;
   margin: 30px auto 106px;
 }
 .customers__icon {
   display: flex;
 }
 .customers__icon > img {
-  filter: brightness(0);
   max-width: 100%;
-  margin: auto;
+  filter: brightness(0);
   background-repeat: no-repeat;
+  margin: auto;
 }
 .customers_second-section {
   padding-left: 2px;
   margin-bottom: 75px;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .about {
-    width: 100%;
     display: block;
     padding: 46px 15px 45px;
   }
   .about__text-wrapper {
     width: 100%;
   }
-  .about__text-wrapper > h6,
-.about__text-wrapper p {
-    margin: 0;
-  }
-  .about__text-wrapper > p {
-    letter-spacing: normal;
-    margin: 9px 0 0 0;
-  }
   .about__text-wrapper:first-child {
     margin-bottom: 31px;
   }
+  .about__title {
+    margin: 0;
+  }
+  .about__description {
+    margin: 0;
+    letter-spacing: normal;
+    margin: 9px 0 0 0;
+  }
   .customers {
-    width: 100%;
-    height: auto;
     justify-content: flex-start;
     flex-wrap: wrap;
+    height: auto;
     margin: 0;
   }
   .customers__icon {
-    width: 106px;
-    height: 95.5px;
     justify-content: center;
     align-items: center;
+    width: 106px;
+    height: 95.5px;
     border: 1px solid rgb(227, 227, 227);
   }
   .customers__icon > img {
@@ -452,16 +449,15 @@
   }
 }
 .features {
-  width: 1400px;
-  min-height: 602px;
-  margin: 0 auto;
-  padding: 5px 0 89px 126px;
   position: relative;
+  min-height: 602px;
+  padding: 5px 0 89px 126px;
+  margin: 0 auto;
 }
 .features__small-banner {
   position: absolute;
-  left: 0;
   bottom: 281px;
+  left: 0;
 }
 .features__big-banner {
   position: absolute;
@@ -497,67 +493,57 @@
   position: relative;
   width: 100%;
   margin-bottom: 44px;
-  cursor: pointer;
   margin-left: 3px;
+  cursor: pointer;
 }
 .features__click-block::after {
   content: "";
+  position: absolute;
+  bottom: -23px;
   display: block;
   width: 100%;
   height: 1px;
   background-color: rgba(43, 41, 45, 0.15);
-  position: absolute;
-  bottom: -23px;
 }
-.features__click-block > h6 {
+.features__click-block-title {
+  position: relative;
   font-size: 22px;
   font-weight: 700;
   line-height: 26px;
   color: rgb(43, 41, 45);
-  position: relative;
   padding-left: 39px;
 }
-.features__click-block > h6::before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png) center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: brightness(0);
-}
-.features__click-block:nth-child(7) {
-  margin-bottom: 46px;
-}
-.features__click-block:nth-child(8) > h6::before {
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png);
-  top: -1px;
-  left: 1px;
-  height: 25px;
-}
-.features__click-block:nth-child(9) > h6::before {
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png) center no-repeat;
-  top: 1px;
-  left: 1px;
-}
-.features__click-block > p {
+.features__click-block-description {
   font-size: 18px;
   font-weight: 400;
   margin-top: 9px;
   line-height: 25px;
   letter-spacing: 0.06px;
 }
-.features__click-block_active > h6 {
-  color: rgb(49, 66, 198);
+.features__click-block-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png) no-repeat center;
 }
-.features__click-block_active > h6::before {
-  filter: brightness(1);
+.features__click-block-icon_middle {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png) no-repeat center;
+}
+.features__click-block-icon_bottom {
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png) no-repeat center;
+}
+.features__click-block_active {
+  margin-bottom: 46px;
 }
 .features__click-block_active::after {
   background-color: rgb(49, 66, 198);
   height: 3px;
+}
+.features__click-block_active > h6 {
+  color: rgb(49, 66, 198);
 }
 .features__mobile-banner {
   display: none;
@@ -566,12 +552,11 @@
   display: none;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .features {
-    width: 100%;
-    margin: 0;
-    padding: 48px 15px 40px;
     border-bottom: 1px solid rgb(227, 227, 227);
+    padding: 48px 15px 40px;
+    margin: 0;
   }
   .features__small-banner {
     display: none;
@@ -619,11 +604,10 @@
   }
 }
 .audience {
-  width: 1400px;
+  text-align: center;
+  background-color: rgba(0, 161, 198, 0.07);
   padding: 114px 0 110px;
   margin: 0 auto 44px;
-  background-color: rgba(0, 161, 198, 0.07);
-  text-align: center;
 }
 .audience__first-title {
   font-size: 22px;
@@ -633,9 +617,9 @@
   max-width: 555px;
   font-size: 56px;
   font-weight: 700;
+  line-height: 56px;
   letter-spacing: -0.5px;
   margin: 27px auto 30px;
-  line-height: 56px;
 }
 .audience__text {
   max-width: 555px;
@@ -647,48 +631,40 @@
 .audience__learn-more {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
   color: rgb(0, 0, 0);
-  margin: 0 0 111px 3px;
   padding-top: 1px;
+  margin: 0 0 111px 3px;
 }
 .audience__cads-wrapper {
-  width: 1139px;
-  height: 300px;
   display: flex;
   justify-content: space-between;
+  width: 1139px;
+  height: 300px;
   margin: 0 auto;
 }
 
 .user-card {
-  display: flex;
+  display: block;
+  text-align: center;
   width: 262px;
   height: 300px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png) no-repeat center 22px;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 33px;
-  text-decoration: none;
   font-size: 22px;
   font-weight: 700;
+  text-decoration: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff;
   border-radius: 8px;
 }
-.user-card:nth-child(2) {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png) no-repeat center 22px;
-}
-.user-card:nth-child(3) {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png) no-repeat center 22px;
-}
-.user-card:nth-child(4) {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #ffffff url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png) no-repeat center 22px;
+.user-card > img {
+  display: block;
+  margin: 22px auto 24px;
 }
 .user-card:hover {
   background-color: rgb(49, 65, 197);
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .audience {
-    width: 100%;
     padding: 49px 15px 35px;
     margin: 0;
   }
@@ -698,9 +674,9 @@
   .audience__second-title {
     width: 100%;
     font-size: 40px;
+    line-height: 40px;
     letter-spacing: -0.36px;
     margin: 17px 0;
-    line-height: 40px;
   }
   .audience__text {
     width: 100%;
@@ -708,36 +684,34 @@
   }
   .audience__learn-more {
     width: 100%;
-    margin: 12px 0 0 0;
     padding: 0;
+    margin: 12px 0 0 0;
   }
   .audience__get-started {
     width: 100%;
   }
   .audience__cads-wrapper {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: auto;
     margin: 40px 0 0 0;
   }
   .user-card {
-    display: flex;
     width: 100%;
     height: 300px;
     margin-bottom: 15px;
   }
 }
 .inbox {
-  width: 1400px;
-  min-height: 790px;
-  margin: 0 auto;
-  padding: 115px 99px 0 193px;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgba(252, 240, 227, 0.4);
   justify-content: space-between;
+  min-height: 790px;
+  background-color: rgba(252, 240, 227, 0.4);
+  padding: 115px 99px 0 193px;
+  margin: 0 auto;
 }
 .inbox__banner {
   text-align: center;
@@ -797,29 +771,29 @@
   display: flex;
   justify-content: space-between;
 }
-.inbox-comment__person > img {
+.inbox-comment__person-avatar {
   width: 40px;
   height: 40px;
   margin-top: 2px;
 }
-.inbox-comment__person > div > p:nth-child(1) {
+.inbox-comment__person-name {
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
 }
-.inbox-comment__person > div > p:nth-child(2) {
+.inbox-comment__person-position {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .inbox {
-    width: 100%;
-    margin: 0;
-    padding: 58px 15px 48px;
     display: block;
+    width: 100%;
+    padding: 58px 15px 48px;
+    margin: 0;
   }
   .inbox__banner {
     width: 100%;
@@ -840,14 +814,14 @@
   }
   .inbox__second-title {
     font-size: 40px;
-    letter-spacing: -0.36px;
     line-height: 40px;
+    letter-spacing: -0.36px;
     margin: 17px 0 18px;
   }
   .inbox__description-text {
-    margin: 0;
     width: 100%;
     padding-right: 1px;
+    margin: 0;
   }
   .inbox-comment {
     width: 100%;
@@ -858,21 +832,20 @@
     margin: 0 0 26px 0;
   }
   .inbox-comment__person {
-    width: 240px;
     display: flex;
     justify-content: space-between;
+    width: 240px;
   }
-  .inbox-comment__person > img {
+  .inbox-comment__person-avatar {
     margin: 3px 11px 0 0;
   }
 }
 .communication {
-  width: 1400px;
-  margin: 14px auto 0;
-  padding: 110px 126px 109px 128px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 110px 126px 109px 128px;
+  margin: 14px auto 0;
 }
 .communication__content-wrapper {
   width: 461px;
@@ -897,18 +870,18 @@
   letter-spacing: 0.08px;
 }
 .communication__button {
-  margin: 39px 0 129px 2px;
   position: relative;
+  margin: 39px 0 129px 2px;
 }
 .communication__button::after {
   content: "";
+  position: absolute;
+  bottom: -87px;
+  left: 0;
   display: block;
   width: 150px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1);
-  position: absolute;
-  bottom: -87px;
-  left: 0;
 }
 .communication__banner {
   text-align: center;
@@ -927,38 +900,38 @@
   display: flex;
   margin-left: 3px;
 }
-.communication__cards-wrapper > div {
+
+.communication-card {
   width: 360px;
   height: 115px;
   margin-right: 30px;
 }
-.communication__cards-wrapper > div:nth-child(3) {
+.communication-card:nth-child(3) {
   width: 361px;
 }
-.communication__cards-wrapper > div > p {
+.communication-card__description {
   font-size: 18px;
   line-height: 26px;
   font-weight: 400;
   margin-bottom: 6px;
 }
-.communication__cards-wrapper > div > p > span {
+.communication-card__description > span {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
 }
-.communication__cards-wrapper > div > a {
+.communication-card__link {
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   color: rgb(48, 64, 196);
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .communication {
-    width: 100%;
+    display: block;
     margin: 0;
     padding: 50px 15px 25px;
-    display: block;
   }
   .communication__content-wrapper {
     width: 100%;
@@ -977,13 +950,13 @@
   }
   .communication__button::after {
     content: "";
+    position: absolute;
+    bottom: -411px;
+    left: 0;
     display: block;
     width: 150px;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: -411px;
-    left: 0;
   }
   .communication__banner {
     margin: 0;
@@ -1000,25 +973,24 @@
     display: block;
     margin: 77px 0 0 0;
   }
-  .communication__cards-wrapper > div {
+  .communication-card {
     width: 100%;
     height: 138px;
-    margin: 0 0 33px 0;
+    margin-bottom: 33px;
   }
-  .communication__cards-wrapper > div:nth-child(3) {
+  .communication-card:nth-child(3) {
     width: 100%;
     margin: -1px 0 0 0;
   }
 }
 .feedback {
-  width: 1400px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 0 66px 0;
-  position: relative;
+  margin: 0 auto;
 }
 .feedback__wrap {
   text-align: center;
@@ -1030,10 +1002,10 @@
   color: rgb(49, 66, 198);
 }
 .feedback__comment {
+  max-width: 750px;
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  max-width: 750px;
   margin: 28px 0 34px 20px;
 }
 .feedback__user-name {
@@ -1048,17 +1020,17 @@
   color: rgba(43, 41, 45, 0.6);
 }
 .feedback__buttons-wrap {
-  margin-top: 38px;
-  width: 50px;
   display: flex;
   justify-content: space-between;
+  width: 50px;
+  margin-top: 38px;
 }
 .feedback__button {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
   background-color: rgba(43, 41, 45, 0.2);
   border: none;
+  border-radius: 50%;
   cursor: pointer;
 }
 .feedback__button_select {
@@ -1066,15 +1038,15 @@
 }
 .feedback__banner {
   position: absolute;
-  width: 273px;
   right: 26px;
   bottom: -1px;
+  width: 273px;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .feedback {
-    width: 100%;
     display: block;
+    width: 100%;
     padding: 37px 15px 46px;
   }
   .feedback__wrap {
@@ -1085,8 +1057,8 @@
     margin: 29px 0 32px;
   }
   .feedback__buttons-wrap {
-    margin: 41px auto 0;
     width: 75px;
+    margin: 41px auto 0;
   }
   .feedback__button {
     width: 12px;
@@ -1100,10 +1072,9 @@
   }
 }
 .hiring {
-  max-width: 1400px;
   text-align: center;
-  margin: 0 auto;
   padding: 106px 0 110px;
+  margin: 0 auto;
 }
 .hiring__title {
   font-size: 56px;
@@ -1123,37 +1094,36 @@
   margin-bottom: 110px;
 }
 .hiring__cards-wrap {
-  max-width: 750px;
-  min-height: 284px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 750px;
+  min-height: 284px;
   margin: 0 auto;
 }
 .hiring__card {
-  display: block;
-  height: 81px;
-  border-radius: 8px;
-  border: 1px solid rgba(43, 41, 45, 0.2);
-  padding: 0 114px 0 24px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  height: 81px;
   text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  padding: 0 114px 0 24px;
 }
 .hiring__card:nth-child(1) {
   padding-right: 104px;
 }
 .hiring__card::after {
   content: "";
+  position: absolute;
+  right: 23.5px;
+  top: 34.5px;
   width: 8px;
   height: 12px;
   background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
-  position: absolute;
   filter: brightness(60%);
-  right: 23.5px;
-  top: 34.5px;
 }
 .hiring__card > h6 {
   font-size: 22px;
@@ -1176,7 +1146,7 @@
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .hiring {
     max-width: 100%;
     padding: 50px 15px 36px;
@@ -1195,19 +1165,16 @@
     margin-bottom: 39px;
   }
   .hiring__cards-wrap {
-    width: 100%;
     display: block;
+    width: 100%;
     margin: 0;
   }
   .hiring__card {
     display: block;
     height: 140px;
+    overflow: hidden;
     padding: 19px 0 0 20px;
     margin-bottom: 15px;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    overflow: hidden;
   }
   .hiring__card > h6 {
     width: 150px;
@@ -1218,9 +1185,9 @@
     display: block;
     width: 200px;
     text-align: start;
-    line-height: 22px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 22px;
     margin-top: 19px;
   }
   .hiring__card:nth-child(1) {
@@ -1232,27 +1199,27 @@
   }
   .hiring__card::before {
     content: "";
-    display: block;
-    width: 49px;
-    height: 140px;
     background-color: rgb(213, 212, 213);
     position: absolute;
     top: 0;
     right: 0;
+    display: block;
+    width: 49px;
+    height: 140px;
   }
 }
 .order {
+  text-align: center;
   background-color: rgb(244, 245, 247);
   padding: 50px 15px;
   margin: 0 auto;
-  text-align: center;
 }
 .order__banner {
-  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
   width: 200px;
   height: 220px;
-  margin: 0 auto;
+  background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
   background-size: contain;
+  margin: 0 auto;
 }
 .order__title {
   font-size: 40px;
@@ -1265,13 +1232,12 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
-  margin-bottom: 78px;
   text-align: start;
+  margin-bottom: 78px;
 }
 .order__email-input {
   width: 100%;
   height: 48px;
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
   text-align: center;
@@ -1288,19 +1254,19 @@
   color: rgba(43, 41, 45, 0.6);
 }
 .order__extra-info a {
-  color: rgb(49, 66, 198);
   font-size: 14px;
+  color: rgb(49, 66, 198);
 }
 
 @media (min-width: 1400px) {
   .order {
-    padding: 72px 0 72px;
     display: flex;
+    padding: 72px 0 72px;
   }
   .order__banner {
-    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
     width: 269px;
     height: 296px;
+    background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/illustration-window.png) center no-repeat;
     margin: 0 0 0 224px;
   }
   .order__wrap {
@@ -1316,31 +1282,31 @@
   }
   .order__email-input {
     width: 385px;
+    height: 48px;
     text-align: left;
     padding: 0 13px;
     margin: 26px 5px 10px 0;
-    text-align: center;
   }
   .order__button {
     width: 160px;
     margin: 0;
   }
   .order__extra-info a {
-    color: rgb(49, 66, 198);
     font-size: 14px;
     font-weight: 400;
+    color: rgb(49, 66, 198);
   }
 }
 .engage-mobile {
   display: none;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .engage-mobile {
     display: block;
     width: 100%;
-    padding: 41px 15px 40px;
     border-bottom: 1px solid rgb(227, 227, 227);
+    padding: 41px 15px 40px;
   }
   .engage-mobile__first-title {
     font-size: 22px;
@@ -1375,7 +1341,7 @@
   display: none;
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .support-mobile {
     display: block;
   }
@@ -1384,16 +1350,16 @@
   }
 }
 .page {
+  position: relative;
   width: 1400px;
   margin: 0 auto;
-  position: relative;
 }
 .page__line-for-footer {
   position: absolute;
+  bottom: 50px;
   width: 100%;
   height: 1px;
   background-color: rgba(43, 41, 45, 0.1);
-  bottom: 50px;
 }
 
 .pinkBacground-wrapper {
@@ -1402,7 +1368,7 @@
   background-color: rgb(243, 198, 189);
 }
 
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   .page {
     width: 320px;
   }

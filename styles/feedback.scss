@@ -13,7 +13,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
-    color: rgba(49, 66, 198, 1);
+    color: $blue-color;
   }
   &__comment {
     max-width: 750px;
@@ -31,7 +31,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    color: rgba(43, 41, 45, 0.6);
+    color: $main-text-color;
   }
   &__buttons-wrap {
     display: flex;

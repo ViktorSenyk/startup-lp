@@ -58,7 +58,7 @@
       }
       & > h6,
       span {
-        color: rgba(255, 255, 255, 1);
+        color: $light-color;
       }
     }
   }
@@ -71,7 +71,7 @@
   &__desc {
     font-size: 18px;
     font-weight: 400;
-    color: rgba(43, 41, 45, 0.6);
+    color: $main-text-color;
   }
 }
 

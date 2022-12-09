@@ -6,7 +6,7 @@
   .engage-mobile {
     display: block;
     width: 100%;
-    border-bottom: 1px solid rgba(227, 227, 227, 1);
+    border-bottom: 1px solid $border-color;
     padding: 41px 15px 40px;
     &__first-title {
       font-size: 22px;
@@ -34,7 +34,7 @@
       font-weight: 400;
       line-height: 22px;
       text-align: center;
-      color: rgba(43, 41, 45, 0.6);
+      color: $main-text-color;
     }
   }
 }

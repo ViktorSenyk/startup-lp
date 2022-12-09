@@ -89,11 +89,11 @@
     &_active {
       margin-bottom: 46px;
       &::after {
-        background-color: rgba(49, 66, 198, 1);
+        background-color: $blue-color;
         height: 3px;
       }
       & > h6 {
-        color: rgba(49, 66, 198, 1);
+        color: $blue-color;
       }
     }
   }
@@ -107,7 +107,7 @@
 
 @include small-screen {
   .features {
-    border-bottom: 1px solid rgba(227, 227, 227, 1);
+    border-bottom: 1px solid $border-color;
     padding: 48px 15px 40px;
     margin: 0;
     &__small-banner {
@@ -148,7 +148,7 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 22px;
-      color: rgba(43, 41, 45, 0.6);
+      color: $main-text-color;
       text-align: center;
     }
     &__click-block {

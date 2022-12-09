@@ -120,24 +120,19 @@
           />
           <p class="features__mobile-caption">A better way to acquire new users</p>
           <div class="features__click-block features__click-block_active">
-            <h6 class="features__click-block-title">
-              <i class="features__click-block-icon"></i>Acquire new customers
-            </h6>
+            <i class="features__click-block-icon"></i>
+            <h6 class="features__click-block-title">Acquire new customers</h6>
             <p class="features__click-block-description">
               Everything you need to start building – including open-source code, documentation.
             </p>
           </div>
           <div class="features__click-block features__click-block_middle">
-            <h6 class="features__click-block-title">
-              <i class="features__click-block-icon features__click-block-icon_middle"></i>Engage
-              users
-            </h6>
+            <i class="features__click-block-icon features__click-block-icon_middle"></i>
+            <h6 class="features__click-block-title">Engage users</h6>
           </div>
           <div class="features__click-block features__click-block_bottom">
-            <h6 class="features__click-block-title">
-              <i class="features__click-block-icon features__click-block-icon_bottom"></i>Develop
-              across platforms
-            </h6>
+            <i class="features__click-block-icon features__click-block-icon_bottom"></i>
+            <h6 class="features__click-block-title">Develop across platforms</h6>
           </div>
         </div>
         <img
@@ -182,12 +177,12 @@
         <p class="engage-mobile__caption">Live chat and messaging</p>
       </section>
       <section class="inbox">
-        <div class="inbox__banner">
-          <img
+        <div class="inbox__banner inbox-banner">
+          <img class="inbox-banner__img"
             src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/wheel.png"
             alt="banner"
           />
-          <p>Connect with customers and grow faster</p>
+          <p class="inbox-banner__desc">Connect with customers and grow faster</p>
         </div>
         <div class="inbox__content-wrapper">
           <h6 class="inbox__first-title">Team Inbox</h6>
@@ -202,7 +197,8 @@
               Definitely a huge time saver for a web developer!”
             </p>
             <div class="inbox-comment__person">
-              <img class="inbox-comment__person-avatar"
+              <img
+                class="inbox-comment__person-avatar"
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-avatar.png"
                 alt="avatar"
               />
@@ -224,12 +220,12 @@
           </p>
           <button class="communication__button action-button">Get Started</button>
         </div>
-        <div class="communication__banner">
-          <img
+        <div class="communication__banner communication-banner">
+          <img class="communication-banner__img"
             src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/hand-with-phone.png"
             alt="banner"
           />
-          <p>A better way to acquire new users</p>
+          <p class="communication-banner__text">A better way to acquire new users</p>
         </div>
         <div class="communication__cards-wrapper">
           <div class="communication-card">
@@ -269,25 +265,25 @@
           <a href="#" class="user-card"
             ><img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
-              alt="user - 1"
-            />Developers</a
+              alt="Developers"
+            />developers</a
           >
           <a href="#" class="user-card"
             ><img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
-              alt="user - 2"
+              alt="entertainment"
             />Entertainment</a
           >
           <a href="#" class="user-card"
             ><img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
-              alt="user - 3"
+              alt="athletes"
             />Athletes</a
           >
           <a href="#" class="user-card"
             ><img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
-              alt="user - 4"
+              alt="creators"
             />Creators</a
           >
         </div>
@@ -354,17 +350,17 @@
         </p>
         <button class="action-button hiring__button">More about Company</button>
         <div class="hiring__cards-wrap">
-          <a href="#" class="hiring__card">
-            <h6>Front-End Developer</h6>
-            <span>Los Angeles / Remote</span>
+          <a href="#" class="hiring__card hiring-card">
+            <h6 class="hiring-card__title">Front-End Developer</h6>
+            <span class="hiring-card__desc">Los Angeles / Remote</span>
           </a>
-          <a href="#" class="hiring__card">
-            <h6>Community Manager</h6>
-            <span>New York / Full-Time</span>
+          <a href="#" class="hiring__card hiring-card">
+            <h6 class="hiring-card__title">Community Manager</h6>
+            <span class="hiring-card__desc">New York / Full-Time</span>
           </a>
-          <a href="#" class="hiring__card">
-            <h6>UX/UI Designer</h6>
-            <span>New York / Full-Time</span>
+          <a href="#" class="hiring__card hiring-card">
+            <h6 class="hiring-card__title">UX/UI Designer</h6>
+            <span class="hiring-card__desc">New York / Full-Time</span>
           </a>
         </div>
       </section>
@@ -376,7 +372,13 @@
             Get notified about company updates, news and blog posts. We hate spam.
           </p>
           <form>
-            <input type="email" class="order__email-input" value="Enter your email" name="" id="" />
+            <input
+              type="email"
+              class="order__email-input"
+              placeholder="Enter your email"
+              name=""
+              id=""
+            />
             <button class="action-button order__button">Get Started</button>
           </form>
           <p class="order__extra-info">
@@ -436,9 +438,15 @@
             <li class="footer__bottom-link"><a href="#">License</a></li>
           </ul>
           <ul class="footer__bottom-links footer__bottom-icons">
-            <li><a href="#"><i class="footer__bottom-icon"></i></a></li>
-            <li><a href="#"><i class="footer__bottom-icon footer__bottom-icon_fb"></i></a></li>
-            <li><a href="#"><i class="footer__bottom-icon footer__bottom-icon_lk"></i></a></li>
+            <li>
+              <a href="#"><i class="footer__bottom-icon"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="footer__bottom-icon footer__bottom-icon_fb"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="footer__bottom-icon footer__bottom-icon_lk"></i></a>
+            </li>
           </ul>
         </nav>
       </footer>

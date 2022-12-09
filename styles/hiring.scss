@@ -50,15 +50,6 @@
       background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
       filter: brightness(60%);
     }
-    & > h6 {
-      font-size: 22px;
-      font-weight: 700;
-    }
-    & > span {
-      font-size: 18px;
-      font-weight: 400;
-      color: rgba(43, 41, 45, 0.6);
-    }
     &:hover {
       background-color: rgba(49, 65, 197, 1);
       &::after {
@@ -70,6 +61,17 @@
         color: rgba(255, 255, 255, 1);
       }
     }
+  }
+}
+.hiring-card {
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__desc {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(43, 41, 45, 0.6);
   }
 }
 
@@ -101,20 +103,6 @@
       overflow: hidden;
       padding: 19px 0 0 20px;
       margin-bottom: 15px;
-      & > h6 {
-        width: 150px;
-        text-align: start;
-        line-height: 28px;
-      }
-      & > span {
-        display: block;
-        width: 200px;
-        text-align: start;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 22px;
-        margin-top: 19px;
-      }
       &:nth-child(1) {
         padding-right: 0;
       }
@@ -132,6 +120,22 @@
         width: 49px;
         height: 140px;
       }
+    }
+  }
+  .hiring-card {
+    &__title {
+      width: 150px;
+      text-align: start;
+      line-height: 28px;
+    }
+    &__desc {
+      display: block;
+      width: 200px;
+      text-align: start;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-top: 19px;
     }
   }
 }

@@ -717,12 +717,6 @@ html, a {
   text-align: center;
   margin-top: 27px;
 }
-.inbox__banner > p {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(43, 41, 45, 0.6);
-  margin-top: 13px;
-}
 .inbox__content-wrapper {
   width: 519px;
 }
@@ -745,6 +739,13 @@ html, a {
   font-weight: 400;
   line-height: 34px;
   margin: 0 0 44px 28px;
+}
+
+.inbox-banner__desc {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(43, 41, 45, 0.6);
+  margin-top: 13px;
 }
 
 .inbox-comment {
@@ -799,13 +800,6 @@ html, a {
     width: 100%;
     margin: 0;
   }
-  .inbox__banner > p {
-    display: none;
-  }
-  .inbox__banner > img {
-    width: 290px;
-    height: 349px;
-  }
   .inbox__content-wrapper {
     width: 100%;
   }
@@ -822,6 +816,13 @@ html, a {
     width: 100%;
     padding-right: 1px;
     margin: 0;
+  }
+  .inbox-banner__img {
+    width: 290px;
+    height: 349px;
+  }
+  .inbox-banner__desc {
+    display: none;
   }
   .inbox-comment {
     width: 100%;
@@ -887,15 +888,6 @@ html, a {
   text-align: center;
   margin-right: 65px;
 }
-.communication__banner > img {
-  margin: -14px 1px 0 0;
-}
-.communication__banner > p {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(43, 41, 45, 0.6);
-  margin-top: 13px;
-}
 .communication__cards-wrapper {
   display: flex;
   margin-left: 3px;
@@ -925,6 +917,16 @@ html, a {
   font-weight: 700;
   line-height: 26px;
   color: rgb(48, 64, 196);
+}
+
+.communication-banner__img {
+  margin: -14px 1px 0 0;
+}
+.communication-banner__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(43, 41, 45, 0.6);
+  margin-top: 13px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -961,17 +963,17 @@ html, a {
   .communication__banner {
     margin: 0;
   }
-  .communication__banner > img {
+  .communication__cards-wrapper {
+    display: block;
+    margin: 77px 0 0 0;
+  }
+  .communication-banner__img {
     width: 290px;
     height: 291px;
     margin: 40px 0 0 0;
   }
-  .communication__banner > p {
+  .communication-banner__text {
     margin-top: 15px;
-  }
-  .communication__cards-wrapper {
-    display: block;
-    margin: 77px 0 0 0;
   }
   .communication-card {
     width: 100%;
@@ -1125,15 +1127,6 @@ html, a {
   background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png);
   filter: brightness(60%);
 }
-.hiring__card > h6 {
-  font-size: 22px;
-  font-weight: 700;
-}
-.hiring__card > span {
-  font-size: 18px;
-  font-weight: 400;
-  color: rgba(43, 41, 45, 0.6);
-}
 .hiring__card:hover {
   background-color: rgb(49, 65, 197);
 }
@@ -1144,6 +1137,16 @@ html, a {
 .hiring__card:hover > h6,
 .hiring__card:hover span {
   color: rgb(255, 255, 255);
+}
+
+.hiring-card__title {
+  font-size: 22px;
+  font-weight: 700;
+}
+.hiring-card__desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(43, 41, 45, 0.6);
 }
 
 @media screen and (max-width: 1400px) {
@@ -1176,20 +1179,6 @@ html, a {
     padding: 19px 0 0 20px;
     margin-bottom: 15px;
   }
-  .hiring__card > h6 {
-    width: 150px;
-    text-align: start;
-    line-height: 28px;
-  }
-  .hiring__card > span {
-    display: block;
-    width: 200px;
-    text-align: start;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    margin-top: 19px;
-  }
   .hiring__card:nth-child(1) {
     padding-right: 0;
   }
@@ -1206,6 +1195,20 @@ html, a {
     display: block;
     width: 49px;
     height: 140px;
+  }
+  .hiring-card__title {
+    width: 150px;
+    text-align: start;
+    line-height: 28px;
+  }
+  .hiring-card__desc {
+    display: block;
+    width: 200px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 19px;
   }
 }
 .order {

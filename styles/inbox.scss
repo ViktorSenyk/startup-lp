@@ -6,13 +6,16 @@
   background-color: rgba(252, 240, 227, 0.4);
   padding: 115px 99px 0 193px;
   margin: 0 auto;
+
   &__banner {
     text-align: center;
     margin-top: 27px;
   }
+
   &__content-wrapper {
     width: 519px;
   }
+
   &__first-title {
     font-size: 22px;
     font-weight: 700;
@@ -20,6 +23,7 @@
     line-height: 34px;
     margin-left: 29px;
   }
+
   &__second-title {
     font-size: 56px;
     font-weight: 700;
@@ -27,6 +31,7 @@
     line-height: 56px;
     margin: 24px 0 30px 27px;
   }
+
   &__description-text {
     font-size: 24px;
     font-weight: 400;
@@ -34,6 +39,7 @@
     margin: 0 0 44px 28px;
   }
 }
+
 .inbox-banner {
   &__desc {
     font-size: 14px;
@@ -53,30 +59,36 @@
     inset 0px 1px 0px rgba(255, 255, 255, 0.1);
   border-bottom: 4px solid rgba(1, 133, 208, 1);
   padding: 30px 29px 0;
+
   &__details {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     margin: 0 0 27px 2px;
+
     & > span {
       font-weight: 700;
       font-size: 20px;
     }
   }
+
   &__person {
     width: 276px;
     display: flex;
     justify-content: space-between;
+
     &-avatar {
       width: 40px;
       height: 40px;
       margin-top: 2px;
     }
+
     &-name {
       font-size: 16px;
       font-weight: 700;
       line-height: 22px;
     }
+
     &-position {
       font-size: 16px;
       font-weight: 400;
@@ -92,22 +104,27 @@
     width: 100%;
     padding: 58px 15px 48px;
     margin: 0;
+
     &__banner {
       width: 100%;
       margin: 0;
     }
+
     &__content-wrapper {
       width: 100%;
     }
+
     &__first-title {
       margin: 28px 0 0 0;
     }
+
     &__second-title {
       font-size: 40px;
       line-height: 40px;
       letter-spacing: -0.36px;
       margin: 17px 0 18px;
     }
+
     &__description-text {
       width: 100%;
       padding-right: 1px;
@@ -119,21 +136,26 @@
       width: 290px;
       height: 349px;
     }
+
     &__desc {
       display: none;
     }
   }
+
   .inbox-comment {
     width: 100%;
     padding: 30px 20px;
     margin: 30px 0 0 0;
+
     &__details {
       margin: 0 0 26px 0;
     }
+
     &__person {
       display: flex;
       justify-content: space-between;
       width: 240px;
+      
       &-avatar {
         margin: 3px 11px 0 0;
       }

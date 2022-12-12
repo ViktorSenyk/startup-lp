@@ -3,10 +3,12 @@
   background-color: rgba(0, 161, 198, 0.07);
   padding: 114px 0 110px;
   margin: 0 auto 44px;
+
   &__first-title {
     font-size: 22px;
     font-weight: 700;
   }
+
   &__second-title {
     max-width: 555px;
     font-size: 56px;
@@ -15,6 +17,7 @@
     letter-spacing: -0.5px;
     margin: 27px auto 30px;
   }
+
   &__text {
     max-width: 555px;
     font-size: 24px;
@@ -22,6 +25,7 @@
     line-height: 34px;
     margin: 0 auto 38px;
   }
+
   &__learn-more {
     background: linear-gradient(
         180deg,
@@ -33,6 +37,7 @@
     padding-top: 1px;
     margin: 0 0 111px 3px;
   }
+
   &__cads-wrapper {
     display: flex;
     justify-content: space-between;
@@ -59,8 +64,9 @@
     display: block;
     margin: 22px auto 24px;
   }
+
   &:hover {
-    background-color: rgba(49, 65, 197, 1);
+    background-color: $blue-color;
     color: $light-color;
   }
 }
@@ -69,9 +75,11 @@
   .audience {
     padding: 49px 15px 35px;
     margin: 0;
+
     &__first-title {
       line-height: 34px;
     }
+
     &__second-title {
       width: 100%;
       font-size: 40px;
@@ -79,18 +87,22 @@
       letter-spacing: -0.36px;
       margin: 17px 0;
     }
+    
     &__text {
       width: 100%;
       margin: 0 0 30px 0;
     }
+
     &__learn-more {
       width: 100%;
       padding: 0;
       margin: 12px 0 0 0;
     }
+
     &__get-started {
       width: 100%;
     }
+
     &__cads-wrapper {
       display: flex;
       flex-direction: column;
@@ -100,6 +112,7 @@
       margin: 40px 0 0 0;
     }
   }
+  
   .user-card {
     width: 100%;
     height: 300px;

@@ -4,15 +4,18 @@
   justify-content: space-between;
   padding: 110px 126px 109px 128px;
   margin: 14px auto 0;
+
   &__content-wrapper {
     width: 461px;
   }
+
   &__first-title {
     font-size: 22px;
     font-weight: 700;
     line-height: 34px;
-    color: rgba(1, 137, 209, 1);
+    color: $blue-color;
   }
+
   &__second-title {
     font-size: 56px;
     font-weight: 700;
@@ -20,15 +23,18 @@
     letter-spacing: -0.5px;
     margin: 23px 0 30px -2px;
   }
+
   &__description-text {
     font-size: 24px;
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0.08px;
   }
+
   &__button {
     position: relative;
     margin: 39px 0 129px 2px;
+
     &::after {
       content: '';
       position: absolute;
@@ -37,47 +43,55 @@
       display: block;
       width: 150px;
       height: 1px;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: $line-color;
     }
   }
+
   &__banner {
     text-align: center;
     margin-right: 65px;
   }
+
   &__cards-wrapper {
     display: flex;
     margin-left: 3px;
   }
 }
+
 .communication-card {
   width: 360px;
   height: 115px;
   margin-right: 30px;
+
   &:nth-child(3) {
     width: 361px;
   }
+
   &__description {
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
     margin-bottom: 6px;
+
     & > span {
       font-size: 18px;
       font-weight: 700;
       line-height: 26px;
     }
   }
+
   &__link {
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
-    color: rgba(48, 64, 196, 1);
+    color: $blue-color;
   }
 }
 .communication-banner {
   &__img {
     margin: -14px 1px 0 0;
   }
+
   &__text {
     font-size: 14px;
     font-weight: 400;
@@ -91,20 +105,25 @@
     display: block;
     margin: 0;
     padding: 50px 15px 25px;
+
     &__content-wrapper {
       width: 100%;
     }
+
     &__second-title {
       font-size: 40px;
       line-height: 40px;
       letter-spacing: -0.36px;
       margin: 17px 0;
     }
+
     &__description-text {
       letter-spacing: normal;
     }
+
     &__button {
       margin: 27px 0 0 0;
+
       &::after {
         content: '';
         position: absolute;
@@ -113,31 +132,37 @@
         display: block;
         width: 150px;
         height: 1px;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: $line-color;
       }
     }
+
     &__banner {
       margin: 0;
     }
+
     &__cards-wrapper {
       display: block;
       margin: 77px 0 0 0;
     }
   }
+
   .communication-banner {
     &__img {
       width: 290px;
       height: 291px;
       margin: 40px 0 0 0;
     }
+
     &__text {
       margin-top: 15px;
     }
   }
+
   .communication-card {
     width: 100%;
     height: 138px;
     margin-bottom: 33px;
+    
     &:nth-child(3) {
       width: 100%;
       margin: -1px 0 0 0;

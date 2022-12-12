@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   min-height: 389px;
   padding: 43px 130px 0;
+
   &__description {
     width: 360px;
     font-size: 18px;
@@ -11,78 +12,94 @@
     color: $main-text-color;
     margin: 26px 0 31px;
   }
+
   &__button {
     width: 135px;
     height: 40px;
     background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png);
     border: none;
     cursor: pointer;
+
     &:nth-child(2) {
       width: 116px;
       background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/google-play.png);
       margin-left: 5px;
     }
   }
+
   &__link-wrapper {
     min-width: 265px;
+
     &:nth-child(2) {
       margin: 20px 29px 0 126px;
     }
+
     &:nth-child(3) {
       margin: 20px 0 0 0;
     }
   }
+
   &__links-title {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 18px;
   }
+
   &__links-list {
     list-style: none;
   }
+
   &__link > a {
     text-decoration: none;
     font-size: 18px;
     line-height: 35px;
     color: $main-text-color;
   }
+
   &__extra-wrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 60px;
   }
+
   &__bottom-links {
     display: flex;
     justify-content: space-between;
     min-width: 180px;
     list-style: none;
   }
+
   &__bottom-link > a {
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
     color: $main-text-color;
   }
+
   &__bottom-icons {
     min-width: 97px;
     margin: 1px 2px 0 0;
   }
+
   &__bottom-icon {
     display: inline-block;
     width: 18px;
     height: 17px;
     background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png)
       center no-repeat;
+
     &_fb {
       background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
     }
+
     &_lk {
       background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
     }
   }
+
   &__logo {
-    & > div {
+    &_footer-wrap {
       padding-top: 7px;
     }
   }
@@ -93,57 +110,42 @@
     display: block;
     align-items: center;
     padding: 39px 15px 22px;
+
     &__buttons-wrap {
       margin: 0 0 69px 15px;
     }
+
     &__description {
       display: none;
     }
-    &__logo {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      & > img {
-        width: 66px;
-        height: 61px;
-        margin: 0 0 2px 6px;
-      }
-      & > div > p {
-        display: block;
-        text-align: center;
-        font-size: 18px;
-        line-height: 25px;
-        margin-bottom: 32px;
-      }
-      & > div > h6 {
-        text-align: center;
-        font-size: 20px;
-        line-height: 25px;
-        margin: 0;
-        margin-top: 10px;
-      }
-    }
+
     &__link-wrapper {
       width: 100%;
+
       &:nth-child(2) {
         margin: 0;
       }
+
       &:nth-child(3) {
         margin: 30px 0 0 0;
       }
     }
+
     &__link > a {
       line-height: 35.2px;
     }
+
     &__extra-wrapper {
       display: block;
       width: 100%;
       margin: 0;
     }
+
     &__bottom-links {
       width: 180px;
       margin: 29px 0 33px;
     }
+    
     &__bottom-icons {
       width: 97px;
     }

@@ -4,6 +4,7 @@
   width: 1140px;
   height: 62px;
   margin: auto;
+
   &__button {
     width: 160px;
     height: 48px;
@@ -16,15 +17,18 @@
     margin-left: 75px;
     cursor: pointer;
   }
+
   &__navigation-wrapper {
     margin-left: auto;
   }
+
   &__navigation-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
     width: 273px;
   }
+
   &__navigation-item {
     & > a {
       text-decoration: none;
@@ -32,8 +36,10 @@
       font-size: 18px;
       color: rgba(0, 0, 0, 1);
     }
+
     &:nth-child(3) {
       position: relative;
+
       &::after {
         content: '';
         position: absolute;
@@ -45,10 +51,12 @@
         background: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
       }
     }
+
     &_select > a {
       font-weight: 700;
     }
   }
+
   &__mobile-button {
     display: none;
   }
@@ -56,21 +64,29 @@
 
 .logo {
   display: flex;
+
   &__img {
     width: 66px;
     height: 60px;
     margin: 1px 9px 0 0;
   }
+
   &__text-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    &_footer {
+      padding-top: 7px;
+    }
   }
+
   &__name {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 4px;
   }
+
   &__description {
     font-size: 18px;
     font-weight: 400;
@@ -86,12 +102,15 @@
     background-color: $light-color;
     box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
     padding: 0 0 0 15px;
+
     &__button {
       display: none;
     }
+
     &__navigation-wrapper {
       display: none;
     }
+
     &__mobile-button {
       display: block;
       width: 59px;
@@ -103,18 +122,50 @@
       cursor: pointer;
     }
   }
+
   .logo {
     display: flex;
+
+    &_footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__img {
       width: 53px;
       height: 48px;
       margin: 0;
+
+      &_footer {
+        width: 66px;
+        height: 61px;
+        margin: 0 0 2px 6px;
+      }
     }
+
     &__name {
       margin: 0 0 0 8px;
+
+      &_footer {
+        text-align: center;
+        font-size: 20px;
+        line-height: 25px;
+        margin: 0;
+        margin-top: 10px;
+      }
     }
+    
     &__description {
       display: none;
+
+      &_footer {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 32px;
+      }
     }
   }
 }

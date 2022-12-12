@@ -2,18 +2,21 @@
   display: flex;
   justify-content: space-between;
   min-height: 255px;
-  background-color: rgba(244, 245, 247, 1);
+  background-color: $main-background-color;
   padding: 77px 131px 73px 130px;
+
   &__text-wrapper {
     width: 555px;
     min-height: 102px;
   }
+
   &__title {
     font-size: 22px;
     font-weight: 700;
     line-height: 32px;
     margin-top: 1px;
   }
+
   &__description {
     font-size: 22px;
     font-weight: 400;
@@ -29,8 +32,10 @@
   max-width: 1140px;
   height: 75px;
   margin: 30px auto 106px;
+
   &__icon {
     display: flex;
+
     & > img {
       max-width: 100%;
       filter: brightness(0);
@@ -38,6 +43,7 @@
       margin: auto;
     }
   }
+
   &_second-section {
     padding-left: 2px;
     margin-bottom: 75px;
@@ -45,18 +51,23 @@
 }
 
 @include small-screen {
+
   .about {
     display: block;
     padding: 46px 15px 45px;
+
     &__text-wrapper {
       width: 100%;
+
       &:first-child {
         margin-bottom: 31px;
       }
     }
+
     &__title {
       margin: 0;
     }
+
     &__description {
       margin: 0;
       letter-spacing: normal;
@@ -69,23 +80,28 @@
     flex-wrap: wrap;
     height: auto;
     margin: 0;
+
     &__icon {
       justify-content: center;
       align-items: center;
       width: 106px;
       height: 95.5px;
       border: 1px solid $border-color;
+
       & > img {
         width: 73%;
         margin: 0;
       }
+
       &:nth-child(3) > img {
         width: 36%;
       }
+
       &:nth-child(5) > img {
         width: 49%;
       }
     }
+    
     &_second-section {
       padding: 0;
       margin: 0;

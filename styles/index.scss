@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 html, a {
   color: rgba(43, 41, 45, 1);
   font-family: 'Work Sans', sans-serif;
@@ -29,6 +30,7 @@ html, a {
   position: relative;
   width: 1400px;
   margin: 0 auto;
+
   &__line-for-footer {
     position: absolute;
     bottom: 50px;
@@ -47,6 +49,7 @@ html, a {
 @include small-screen {
   .page {
     width: 320px;
+    
     &__line-for-footer {
       bottom: 623px;
     }
